@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  /* font-family: 'Roboto', sans-serif; */
+}
+html,
+body {
+  max-width: 100%;
+  margin: 0%;
+  /* font-family: 'Roboto', sans-serif; */
+  overflow-x: hidden;
+}
+
+.button_style_navbar {
+  color: white;
+  margin-left: 10px;
+  background-color: brown;
+  border-radius: 5px;
+  border: 5px solid deepskyblue;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 16px;
+  min-height: 30px;
+  height: auto;
+  min-width: 100px;
+  padding: 4px 14px;
+  /* top right bottom left */
+  padding-bottom: 4.5px;
+  padding-top: 3.5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.button_style_navbar:hover {
+  color: black;
+  background-color: deepskyblue;
+  transition: background-color 0.5s ease-out, -webkit-box-shadow 0.2s ease-out;
+  transition: background-color 0.5s ease-out, box-shadow 0.2s ease-out;
+  transition: background-color 0.5s ease-out, box-shadow 0.2s ease-out,
+    -webkit-box-shadow 0.2s ease-out;
+}
+
+.button_style_navbar_login {
+  color: brown;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: 5px solid brown;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 16px;
+  min-height: 30px;
+  height: auto;
+  min-width: 100px;
+  padding: 4px 14px;
+  /* top right bottom left */
+  padding-bottom: 4.5px;
+  padding-top: 3.5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.button_style_navbar_login:hover {
+  color: black;
+  background-color: brown;
+  transition: background-color 0.5s ease-out, -webkit-box-shadow 0.2s ease-out;
+  transition: background-color 0.5s ease-out, box-shadow 0.2s ease-out;
+  transition: background-color 0.5s ease-out, box-shadow 0.2s ease-out,
+    -webkit-box-shadow 0.2s ease-out;
+}
+
+.banner {
+  margin: 0;
+  background-image: url(https://assets.scaler.com/assets/academy/svg/banner-background-34136d3….svg);
+  background-color: #001a50;
+  padding-top: 5rem;
+  background-position: center;
+  /* height: 72.8rem; */
+  height: 700px;
+}
+
+.sr-container {
+  max-width: 120rem;
+  padding: 0 2rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner_container {
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+}
+.banner_content {
+  flex: 1 0 0;
+}
+.banner_head {
+  color: #ffffff;
+  font-size: 3.6rem;
+  width: 85%;
+}
+.bolder {
+  font-weight: 800;
+}
+
+.banner_des {
+  color: #bac6d8;
+  font-size: 2.4rem;
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+}
+highlight--free {
+    color: #ffffff;
+    font-size: 3.2rem;
+}
+.highlight {
+    display: inline-block;
+    height: inherit;
+    background-image: url(https://assets.scaler.com/assets/academy/svg/highlighter-8c0b59f….svg);
+    background-position: 0 3.3rem;
+    background-repeat: repeat-x;
+}
+
+.banner_button{
+    display: inline-flex;
+}
+
+
+.banner_img{
+    position: relative;
+    flex: 1 0 0;
+    text-align: center;
+}
+
+
+.banner__hexagon-container{
+    position: absolute;
+    color: #0041ca;
+    transform: rotate(90deg);
+}
+/* .glance {
+  margin-top: -25rem;
+  background: transparent;
+}
+
+
+.glance_content {
+  background: whitesmoke !important;
+  background-color: antiquewhite;
+  border-radius: 0.75rem;
+  /* box-shadow: 0 8px 32px 0 rgb(2 16 40 / 16%); */
+/* }
+
+.glance__heading{
+    padding: 6rem 6rem 0 6rem;
+}
+.section_header_content{
+    margin-bottom: 0;
+}
+.section_headre_title{
+    text-align: center;
+    font-weight: 400;
+}  */
