@@ -33,10 +33,10 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
     <!-- nabvar starts -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class=" fixed-top navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">Navbar</a>
         <button
@@ -89,11 +89,15 @@
 
     <!-- navbar ends -->
 
+
+
+    
+
     <!-- banner starts -->
     <section class="banner_header">
       <div class="container banner_content">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-sm-6 col-md-6">
             <h1>A structured, flexible & guided learning program</h1>
             <b>
               Now experience academy for
@@ -101,12 +105,13 @@
             </b>
             <div class="banner_btn">
               <a class="button_style_navbar_login" href="">Book live Class</a>
-              <a class="button_style_navbar" href="">Explore Acadamy</a>
+              <a class="button_style_navbar mt-2" href="">Explore Acadamy</a>
+              <p class="" >Next Batch Starts <b>Mid June</b> </p>
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col-sm-6 col-md-6">
             <div class="banner_image">
-              <img
+              <img class="img-responsive"
                 src="https://assets.scaler.com/assets/academy/png/boy-93234ea365d9b1fa3db64b4117795c1351df4a7e2ebf8889ac1d62ae2c1e5643.png.gz"
                 alt=""
               />
@@ -117,8 +122,10 @@
     </section>
     <!-- banner ends -->
 
-    <!-- System and pobel starts -->
 
+
+
+    <!-- System and probelm starts -->
     <section class="banner_transparent">
       <div class="container banner_over align-items-center">
         <div>
@@ -129,51 +136,266 @@
         </div>
         <div class="system_box_margin">
           <div class="row">
-            <div class="col-sm-3 system_box">
+            <div class="col-sm-12 col-md-3 system_box">
               <h1>1</h1>
             </div>
-            <div class="col-sm-3 system_box">
+            <div class="col-sm-12 col-md-3 system_box">
               <h1>1</h1>
             </div>
-            <div class="col-sm-3 system_box">
+            <div class="col-sm-12 col-md-3 system_box">
               <h1>1</h1>
             </div>
-            <div class="col-sm-3 system_box">
+            <div class="col-sm-12 col-md-3 system_box">
               <h1>1</h1>
             </div>
-            <div class="col-sm-3 system_box">
+            <div class="col-sm-12 col-md-3 system_box">
               <h1>1</h1>
             </div>
-            <div class="col-sm-3 system_box">
+            <div class="col-sm-12 col-md-3 system_box">
               <h1>1</h1>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- System and probelm  ends -->
 
-    <!-- System and pobel starts ends -->
 
-    <section class="section">
+
+    <section class="section" style="background-color: antiquewhite;">
       <div class="container mt-5">
         <h2>UPCOMING COURSES AND PROGRAMS</h2>
         <br />
         <!-- Nav tabs -->
-        <ul class="nav nav-tabs">
+        <ul class="nav justify-content-center nav-tabs">
           <li class="nav-item">
-            <a class="nav-link active tab_link_design" data-toggle="tab" href="#home">Data Sicence</a>
+            <a
+              class="nav-link active tab_link_design"
+              data-toggle="tab"
+              href="#home"
+              >Data Sicence</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link tab_link_design" data-toggle="tab" href="#menu1">System Design</a>
+            <a class="nav-link tab_link_design" data-toggle="tab" href="#menu1"
+              >System Design</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link tab_link_design" data-toggle="tab" href="#menu2">Machine Learning</a>
+            <a class="nav-link tab_link_design" data-toggle="tab" href="#menu2"
+              >Machine Learning</a
+            >
           </li>
         </ul>
 
         <!-- Tab panes -->
         <div class="tab-content">
-          <div id="home" class="container tab-pane active">
+          <div id="home" class="tab_main_content container tab-pane active">
+            <br />
+            <div class="row">
+              <div class="col-sm">
+                <div class="card" style="width: 20rem; height: 30rem;">
+                  <img
+                    class="card-img-top"
+                    src="asset/r1.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body recomonded-card">
+                    <p class="">Product Page</p>
+                    <h5>It's time for better web content management</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#"
+                      >Go somewhere <i class="fas fa-fast-forward"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card" style="width: 20rem; height: 30rem">
+                  <img
+                    class="card-img-top"
+                    src="asset/r2.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body recomonded-card">
+                    <p class="">Product Page</p>
+                    <h5>It's time for better web content management</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#"
+                      >Go somewhere <i class="fas fa-fast-forward"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card" style="width: 20rem; height: 30rem">
+                  <img
+                    class="card-img-top"
+                    src="asset/r3.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body recomonded-card">
+                    <p class="">Product Page</p>
+                    <h5>It's time for better web content management</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#"
+                      >Go somewhere <i class="fas fa-fast-forward"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card" style="width: 20rem; height: 30rem">
+                  <img
+                    class="card-img-top"
+                    src="asset/r3.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body recomonded-card">
+                    <p class="">Product Page</p>
+                    <h5>It's time for better web content management</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#"
+                      >Go somewhere <i class="fas fa-fast-forward"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card" style="width: 20rem; height: 30rem">
+                  <img
+                    class="card-img-top"
+                    src="asset/r3.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body recomonded-card">
+                    <p class="">Product Page</p>
+                    <h5>It's time for better web content management</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#"
+                      >Go somewhere <i class="fas fa-fast-forward"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card" style="width: 20rem; height: 30rem">
+                  <img
+                    class="card-img-top"
+                    src="asset/r3.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body recomonded-card">
+                    <p class="">Product Page</p>
+                    <h5>It's time for better web content management</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#"
+                      >Go somewhere <i class="fas fa-fast-forward"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card" style="width: 20rem; height: 30rem">
+                  <img
+                    class="card-img-top"
+                    src="asset/r3.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body recomonded-card">
+                    <p class="">Product Page</p>
+                    <h5>It's time for better web content management</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#"
+                      >Go somewhere <i class="fas fa-fast-forward"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card" style="width: 20rem; height: 30rem">
+                  <img
+                    class="card-img-top"
+                    src="asset/r3.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body recomonded-card">
+                    <p class="">Product Page</p>
+                    <h5>It's time for better web content management</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#"
+                      >Go somewhere <i class="fas fa-fast-forward"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card" style="width: 20rem; height: 30rem">
+                  <img
+                    class="card-img-top"
+                    src="asset/r3.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body recomonded-card">
+                    <p class="">Product Page</p>
+                    <h5>It's time for better web content management</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#"
+                      >Go somewhere <i class="fas fa-fast-forward"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="card" style="width: 20rem; height: 30rem">
+                  <img
+                    class="card-img-top"
+                    src="asset/r3.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body recomonded-card">
+                    <p class="">Product Page</p>
+                    <h5>It's time for better web content management</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#"
+                      >Go somewhere <i class="fas fa-fast-forward"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="menu1" class=" tab_main_content container tab-pane fade">
             <br />
             <div class="row">
               <div class="col-sm">
@@ -238,72 +460,7 @@
               </div>
             </div>
           </div>
-          <div id="menu1" class="container tab-pane fade">
-            <br />
-            <div class="row">
-              <div class="col-sm">
-                <div class="card" style="width: 20rem; height: 30rem">
-                  <img
-                    class="card-img-top"
-                    src="asset/r1.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body recomonded-card">
-                    <p class="">Product Page</p>
-                    <h5>It's time for better web content management</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#"
-                      >Go somewhere <i class="fas fa-fast-forward"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm">
-                <div class="card" style="width: 20rem; height: 30rem">
-                  <img
-                    class="card-img-top"
-                    src="asset/r2.jpg"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body recomonded-card">
-                    <p class="">Product Page</p>
-                    <h5>It's time for better web content management</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#"
-                      >Go somewhere <i class="fas fa-fast-forward"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm">
-                <div class="card" style="width: 20rem; height: 30rem">
-                  <img
-                    class="card-img-top"
-                    src="asset/r3.png"
-                    alt="Card image cap"
-                  />
-                  <div class="card-body recomonded-card">
-                    <p class="">Product Page</p>
-                    <h5>It's time for better web content management</h5>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#"
-                      >Go somewhere <i class="fas fa-fast-forward"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="menu2" class="container tab-pane fade">
+          <div id="menu2" class="tab_main_content container tab-pane fade">
             <br />
             <div class="row">
               <div class="col-sm">
@@ -371,6 +528,260 @@
         </div>
       </div>
     </section>
+
+
+
+<!-- Benifits -->
+<section>
+<div class="benifits">
+  <div class="container ">
+    <h1 style="text-align: center;">Tried & tested curriculum, trusted by thousands of students</h1>
+    <div class="row">
+      <div class="col-md-6 header-content pageleft">
+        <h5>Products in the the markets</h5>
+        <div class="flex-container">
+          <div class="icon-style"><i style="width: 25px;" class="fas fa-globe"></i></div>
+          <div>
+            <a href="">Start with web analytics.</a>
+            <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
+          </div> 
+        </div>
+        <div class="flex-container">
+          <div class="icon-style"><i style="width: 25px;" class="fas fa-users"></i></i></div>
+          <div>
+            <a href="">Start with web analytics.</a>
+            <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
+          </div> 
+        </div>
+        <div class="flex-container">
+          <div class="icon-style"><i style="width: 25px;" class="fas fa-laptop-code"></i></div>
+          <div>
+            <a href="">Start with web analytics.</a>
+            <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
+          </div> 
+        </div>
+        <div class="flex-container">
+          <div class="icon-style"><i style="width: 25px;" class="fas fa-database"></i></div>
+          <div>
+            <a href="">Start with web analytics.</a>
+            <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
+          </div> 
+        </div>
+      </div>
+
+      <div class="col-md-6 header-content">
+        <h5>Scaler Curiculam</h5>
+        <div class="flex-container">
+          <div class="icon-style"><i style="width: 25px;" class="fas fa-globe"></i></div>
+          <div>
+            <a href="">Start with web analytics.</a>
+            <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
+          </div> 
+        </div>
+        <div class="flex-container">
+          <div class="icon-style"><i style="width: 25px;" class="fas fa-users"></i></i></div>
+          <div>
+            <a href="">Start with web analytics.</a>
+            <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
+          </div> 
+        </div>
+        <div class="flex-container">
+          <div class="icon-style"><i style="width: 25px;" class="fas fa-laptop-code"></i></div>
+          <div>
+            <a href="">Start with web analytics.</a>
+            <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
+          </div> 
+        </div>
+        <div class="flex-container">
+          <div class="icon-style"><i style="width: 25px;" class="fas fa-database"></i></div>
+          <div>
+            <a href="">Start with web analytics.</a>
+            <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- End benifits -->
+
+
+
+
+<!-- testimonial starts -->
+
+<section style="background-color:darkgrey;" class="section">
+  <div class="container testimonial">
+    <h1 style="text-align: center;">Your learning is important. It’s a good idea to go through
+     <b> reviews of previous students</b> to make an informed decision</h1>
+     <p style="text-align: center;">1,000+ working professionals have joined the Scaler Academy family!</p>
+     <div class="items">
+       <div class="item image-name-testimonial">
+         <div class="flex-items">
+            <div class="flex-item">
+                <img  src="asset/shakil.jpg" alt="">
+            </div>
+            <div style="width: 200px;" class="flex-item">
+              <p>Mahmud Shakil</p>
+              <p><span>Sr. Engineer</span></p>
+            </div>
+            <div class="flex-item">
+              <img src="asset/logo.jpg" alt="">
+            </div>
+          </div>  
+         <div class="testimonial-content">
+                <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
+         </div>
+         <div class="read_more">
+               <button class="btn btn-danger">Read More ></button>
+         </div>
+       </div>
+       <div class="item image-name-testimonial">
+        <div class="flex-items">
+           <div class="flex-item">
+               <img  src="asset/shakil.jpg" alt="">
+           </div>
+           <div style="width: 200px;" class="flex-item">
+             <p>Mahmud Shakil</p>
+             <p><span>Sr. Engineer</span></p>
+           </div>
+           <div class="flex-item">
+             <img src="asset/logo.jpg" alt="">
+           </div>
+         </div>  
+        <div class="testimonial-content">
+               <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
+        </div>
+        <div class="read_more">
+              <button class="btn btn-danger">Read More ></button>
+        </div>
+      </div>
+      <div class="item image-name-testimonial">
+        <div class="flex-items">
+           <div class="flex-item">
+               <img  src="asset/shakil.jpg" alt="">
+           </div>
+           <div style="width: 200px;" class="flex-item">
+             <p>Mahmud Shakil</p>
+             <p><span>Sr. Engineer</span></p>
+           </div>
+           <div class="flex-item">
+             <img src="asset/logo.jpg" alt="">
+           </div>
+         </div>  
+        <div class="testimonial-content">
+               <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
+        </div>
+        <div class="read_more">
+              <button class="btn btn-danger">Read More ></button>
+        </div>
+      </div>
+      <div class="item image-name-testimonial">
+        <div class="flex-items">
+           <div class="flex-item">
+               <img  src="asset/shakil.jpg" alt="">
+           </div>
+           <div style="width: 200px;" class="flex-item">
+             <p>Mahmud Shakil</p>
+             <p><span>Sr. Engineer</span></p>
+           </div>
+           <div class="flex-item">
+             <img src="asset/logo.jpg" alt="">
+           </div>
+         </div>  
+        <div class="testimonial-content">
+               <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
+        </div>
+        <div class="read_more">
+              <button class="btn btn-danger">Read More ></button>
+        </div>
+      </div>
+      <div class="item image-name-testimonial">
+        <div class="flex-items">
+           <div class="flex-item">
+               <img  src="asset/shakil.jpg" alt="">
+           </div>
+           <div style="width: 200px;" class="flex-item">
+             <p>Mahmud Shakil</p>
+             <p><span>Sr. Engineer</span></p>
+           </div>
+           <div class="flex-item">
+             <img src="asset/logo.jpg" alt="">
+           </div>
+         </div>  
+        <div class="testimonial-content">
+               <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
+        </div>
+        <div class="read_more">
+              <button class="btn btn-danger">Read More ></button>
+        </div>
+      </div>
+      <div class="item image-name-testimonial">
+        <div class="flex-items">
+           <div class="flex-item">
+               <img  src="asset/shakil.jpg" alt="">
+           </div>
+           <div style="width: 200px;" class="flex-item">
+             <p>Mahmud Shakil</p>
+             <p><span>Sr. Engineer</span></p>
+           </div>
+           <div class="flex-item">
+             <img src="asset/logo.jpg" alt="">
+           </div>
+         </div>  
+        <div class="testimonial-content">
+               <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
+        </div>
+        <div class="read_more">
+              <button class="btn btn-danger">Read More ></button>
+        </div>
+      </div>
+      <div class="item image-name-testimonial">
+        <div class="flex-items">
+           <div class="flex-item">
+               <img  src="asset/shakil.jpg" alt="">
+           </div>
+           <div style="width: 200px;" class="flex-item">
+             <p>Mahmud Shakil</p>
+             <p><span>Sr. Engineer</span></p>
+           </div>
+           <div class="flex-item">
+             <img src="asset/logo.jpg" alt="">
+           </div>
+         </div>  
+        <div class="testimonial-content">
+               <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
+        </div>
+        <div class="read_more">
+              <button class="btn btn-danger">Read More ></button>
+        </div>
+      </div>
+      <div class="item image-name-testimonial">
+        <div class="flex-items">
+           <div class="flex-item">
+               <img  src="asset/shakil.jpg" alt="">
+           </div>
+           <div style="width: 200px;" class="flex-item">
+             <p>Mahmud Shakil</p>
+             <p><span>Sr. Engineer</span></p>
+           </div>
+           <div class="flex-item">
+             <img src="asset/logo.jpg" alt="">
+           </div>
+         </div>  
+        <div class="testimonial-content">
+               <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
+        </div>
+        <div class="read_more">
+              <button class="btn btn-danger">Read More ></button>
+        </div>
+      </div>
+
+     </div>
+  </div>
+</section>
+<!-- testimonial Ends -->
 
     <!-- 
     <section class="section banner">
@@ -422,7 +833,8 @@
       </div>
     </section> -->
 
-    <script src="" async defer></script>
+   
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -454,3 +866,7 @@
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script> -->
   </body>
 </html>
+
+<script>
+
+</script>
