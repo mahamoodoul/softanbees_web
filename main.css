@@ -1,0 +1,455 @@
+.button_style_navbar {
+  color: white;
+  margin-left: 10px;
+  background-color: brown;
+  border-radius: 5px;
+  border: 5px solid deepskyblue;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 16px;
+  text-decoration: none;
+  min-height: 30px;
+  height: auto;
+  min-width: 100px;
+  padding: 4px 14px;
+  /* top right bottom left */
+  padding-bottom: 4.5px;
+  padding-top: 3.5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.button_style_navbar:hover {
+  color: black;
+  background-color: deepskyblue;
+  transition: background-color 0.5s ease-out, -webkit-box-shadow 0.2s ease-out;
+  transition: background-color 0.5s ease-out, box-shadow 0.2s ease-out;
+  transition: background-color 0.5s ease-out, box-shadow 0.2s ease-out,
+    -webkit-box-shadow 0.2s ease-out;
+}
+
+.button_style_navbar_login {
+  color: brown;
+  text-decoration: none;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: 5px solid brown;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 16px;
+  min-height: 30px;
+  height: auto;
+  min-width: 100px;
+  padding: 4px 14px;
+  /* top right bottom left */
+  padding-bottom: 4.5px;
+  padding-top: 3.5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.button_style_navbar_login:hover {
+  color: black;
+  background-color: brown;
+  transition: background-color 0.5s ease-out, -webkit-box-shadow 0.2s ease-out;
+  transition: background-color 0.5s ease-out, box-shadow 0.2s ease-out;
+  transition: background-color 0.5s ease-out, box-shadow 0.2s ease-out,
+    -webkit-box-shadow 0.2s ease-out;
+}
+
+.banner_header {
+  width: 100%;
+  height: 750px;
+  background-color: antiquewhite;
+  padding-top: 116px !important;
+  padding-left: 50px;
+}
+
+.banner_btn {
+  margin-left: 50px;
+}
+
+.banner_btn {
+  margin: 30px 10px 5px 5px;
+}
+.banner_btn p {
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.banner_image {
+  width: 100%;
+  height: 100%;
+  margin-top: -4rem;
+  text-align: center;
+}
+
+.banner_over {
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+  padding-top: 50px;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+.banner_transparent {
+  margin-top: -15rem;
+  background: transparent;
+}
+.system_box_margin {
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.system_box {
+  width: 80px;
+  height: 200px;
+  background-color: #0041ca;
+  border-radius: 5px;
+  margin: 10px 25px 10px 25px !important;
+}
+
+.recomonded {
+  background-color: white;
+  padding-top: 0.5px;
+  height: 400px;
+}
+
+.recomonded-card {
+  text-align: left;
+}
+
+.recomonded-card small {
+  position: absolute;
+  bottom: 10px;
+}
+.card {
+  margin-bottom: 20px !important;
+}
+
+.recomonded-card a {
+  margin-top: 200px !important;
+  text-decoration: none !important;
+  position: absolute;
+  bottom: 40px;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  border: 5px solid turquoise;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 16px;
+  min-height: 32px;
+  height: auto;
+  min-width: 90px;
+  padding: 4px 14px;
+  /* top right bottom left */
+  padding-bottom: 4.5px;
+  padding-top: 3.5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.recomonded-card a:hover {
+  color: black;
+  background-color: turquoise;
+}
+
+.tab_link_design {
+  background: white !important;
+  border-radius: 5px;
+  font-weight: 700;
+  color: black !important;
+}
+
+.nav-link.active {
+  background-color: red !important;
+}
+
+/* .tab-content{
+  
+} */
+/* .tab_main_content {
+  min-height: 30px !important;
+  height: 500px !important;
+  overflow-y: auto !important;
+} */
+
+.items-course {
+  display: flex;
+  overflow-x: auto;
+}
+.items-course .item-course {
+  min-width: 400px;
+  height: 500px;
+  margin: 10px;
+}
+
+.benifits {
+  background-image: url("");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: bisque;
+}
+.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  margin: 5px;
+  padding: 5px;
+  font-size: 15px;
+}
+.icon-style {
+  margin-top: 15px !important;
+  padding-top: 15px !important;
+  font-size: 20px !important;
+}
+
+.pageleft {
+  border-right: 2px solid whitesmoke;
+}
+
+.testimonial {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.items {
+  display: flex;
+  overflow-x: auto;
+}
+
+.items .item {
+  min-width: 400px;
+  height: 300px;
+  background: white;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
+}
+.read_more {
+  border-top: 1px solid darkblue;
+  padding-top: 20px;
+}
+
+.flex-items {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item {
+  flex: 33.3%;
+}
+.flex-item img {
+  width: 70%;
+  border-radius: 50%;
+}
+.flex-item p {
+  line-height: 2px;
+}
+.image-name-testimonial {
+  padding-left: 15px;
+  padding-top: 10px;
+}
+.menotr p {
+  text-align: center;
+  font-weight: 700;
+  padding-top: 10px;
+}
+.mentor-items {
+  display: flex;
+  overflow-x: auto;
+}
+.mentor-items .mentor-item {
+  min-width: 323px;
+  height: 400px;
+  margin: 5px;
+}
+.mentor-item img {
+  object-fit: cover !important;
+}
+.card-item {
+  border-radius: 5px;
+}
+
+.mentor_read_more {
+  margin-top: 10px;
+  border-top: 1px solid darkblue;
+  padding-top: 20px;
+}
+
+.linkedin_icon{
+  margin-left: 82px;
+}
+
+.adventage-info-1 {
+  padding-top: 70px !important;
+  padding-left: 250px !important;
+  background-color: whitesmoke;
+  height: 350px;
+  background-image: url("asset/bg3.PNG");
+  background-position: right; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 50mm; /* Resize the background image to cover the entire container */
+}
+
+.adventage-paragraph {
+  width: 350px;
+}
+.adventage-info {
+  padding-top: 70px;
+  padding-left: 60px !important;
+  padding-right: 250px !important;
+  background-color: #d4d5d7;
+  height: 350px;
+  background-image: url("asset/bg4.PNG");
+  background-position: 75% center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 50mm; /* Resize the background image to cover the entire container */
+}
+
+.adventage-btn {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  border: 5px solid black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 16px;
+  min-height: 32px;
+  height: auto;
+  min-width: 90px;
+  padding: 4px 14px;
+  /* top right bottom left */
+  padding-bottom: 4.5px;
+  padding-top: 3.5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.adventage-btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.becomae_menotr{
+  background-color: #0e76a8;
+  width: 100%;
+  height: auto;
+}
+
+.becomae_menotr button{
+  margin-top: 50px;
+}
+
+
+.partnership-items{
+  display: flex;
+}
+
+.partnership-item{
+  margin: 0px;
+  padding: 10px;
+}
+
+
+
+
+/* partnership ends */
+
+@media only screen and (max-width: 770px) {
+  .banner_transparent {
+    margin-top: 0rem;
+    background: whitesmoke;
+  }
+  .banner_header {
+    text-align: center;
+    padding-left: 0px;
+    text-align: center;
+    height: auto;
+  }
+
+  .banner_btn {
+    margin-left: 0px;
+  }
+
+  .banner_btn {
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+    display: block;
+  }
+
+  .banner_image {
+    width: 50%;
+    height: 50%;
+    /* margin-top: 0rem; */
+    display: block;
+    margin-left: -6rem;
+    margin-right: -2rem;
+  }
+  .button_style_navbar_login {
+    display: block;
+    text-align: center;
+  }
+  .button_style_navbar {
+    display: block;
+    text-align: center;
+  }
+
+  .system_box {
+    width: 80px;
+    height: 100px;
+  }
+
+  .system_box {
+    width: 80px;
+    height: auto;
+    margin: 0px 0px 10px 0px !important;
+  }
+  .pageleft {
+    border-bottom: 2px solid whitesmoke;
+    border-right: 0px solid whitesmoke;
+  }
+  .items::-webkit-scrollbar {
+    display: none;
+  }
+  .items-course::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  /* advantage part */
+
+  .adventage-info-1 {
+    background-color: whitesmoke;
+    background-image: none;
+  }
+  .adventage-paragraph {
+    width: 270px;
+  }
+  .adventage-info {
+    background-color: whitesmoke;
+    background-image: none;
+    padding-top: 70px !important;
+    padding-left: 30px !important;
+    background-color: #d4d5d7;
+    height: 350px;
+    margin-top: 0px !important;
+  }
+  .adventage-info-1 {
+    background-color: whitesmoke;
+    background-image: none;
+    margin-top: 0px !important;
+    padding-top: 50px !important;
+    padding-left: 30px !important;
+  }
+  .adventage-btn {
+    width: 200px;
+  }
+  /* advantage ends */
+
+}
