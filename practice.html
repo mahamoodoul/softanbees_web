@@ -2,57 +2,214 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- <link type="text/css" rel="stylesheet" href="asset/js/lightslider.css" /> -->
+
+    <script src="asset/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- <script src="asset/js/lightslider.js"></script>
+    // Do not include both lightslider.js and lightslider.min.js -->
+    <title>Document</title>
     <style>
-        /* Make the image fully responsive */
+        .uk-section {
+            background-color: #666
+        }
         
-        .carousel-inner img {
-            width: 50%;
-            height: 50%;
+        .owl-carousel {
+            position: relative;
+            margin-top: 30px;
+        }
+        
+        .owl-nav {
+            position: absolute;
+            top: -60px;
+            left: 10px;
+        }
+        
+        .uk-card-primary {
+            border-radius: 8px;
+        }
+        
+        h3 {
+            margin-top: 10px
+        }
+        
+        .uk-card> :last-child {
+            margin-top: 0;
+            margin-bottom: 10px
+        }
+        
+        p {
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+        
+        .owl-next {
+            background: #3286f0;
+        }
+        
+        .owl-theme .owl-nav [class*='owl-'] {
+            background: #e40d0d;
+        }
+        
+        .owl-dots {
+            margin-top: 30px;
+        }
+        
+        .uk-card-title {
+            padding-bottom: 20px
         }
     </style>
 </head>
 
 <body>
+    <div class="uk-margin"></div>
+    <div class="uk-section">
+        <div class="owl-carousel owl-theme">
+            <div class="item ml-2">
+                <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                    <h3 class="uk-card-title">Credit Card Name</h3>
+                    <p>Current Balance</p>
+                    <h3>$000,000,000.00</h3>
+                </div>
 
-    <div style="background-color:red;" id="demo" class="carousel slide" data-ride="carousel">
-
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="asset/1.png" alt="Los Angeles" width="1100" height="500">
-                <img src="asset/male.jpg" alt="Chicago" width="1100" height="500">
             </div>
-            <div class="carousel-item">
-                <img src="asset/male.jpg" alt="Chicago" width="1100" height="500">
+            <div class="item">
+                <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                    <h3 class="uk-card-title">Credit Card Name</h3>
+                    <p>Current Balance</p>
+                    <h3>$000,000,000.00</h3>
+                </div>
+
             </div>
-            <div class="carousel-item">
-                <img src="asset/ibm.png" alt="New York" width="1100" height="500">
+            <div class="item">
+                <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                    <h3 class="uk-card-title">Credit Card Name</h3>
+                    <p>Current Balance</p>
+                    <h3>$000,000,000.00</h3>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                    <h3 class="uk-card-title">Credit Card Name</h3>
+                    <p>Current Balance</p>
+                    <h3>$000,000,000.00</h3>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                    <h3 class="uk-card-title">Credit Card Name</h3>
+                    <p>Current Balance</p>
+                    <h3>$000,000,000.00</h3>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                    <h3 class="uk-card-title">Credit Card Name</h3>
+                    <p>Current Balance</p>
+                    <h3>$000,000,000.00</h3>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                    <h3 class="uk-card-title">Credit Card Name</h3>
+                    <p>Current Balance</p>
+                    <h3>$000,000,000.00</h3>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                    <h3 class="uk-card-title">Credit Card Name</h3>
+                    <p>Current Balance</p>
+                    <h3>$000,000,000.00</h3>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                    <h3 class="uk-card-title">Credit Card Name</h3>
+                    <p>Current Balance</p>
+                    <h3>$000,000,000.00</h3>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                    <h3 class="uk-card-title">Credit Card Name</h3>
+                    <p>Current Balance</p>
+                    <h3>$000,000,000.00</h3>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                    <h3 class="uk-card-title">Credit Card Name</h3>
+                    <p>Current Balance</p>
+                    <h3>$000,000,000.00</h3>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+                    <h3 class="uk-card-title">Credit Card Name</h3>
+                    <p>Current Balance</p>
+                    <h3>$000,000,000.00</h3>
+                </div>
+
             </div>
         </div>
-
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
     </div>
 
+    <!-- <script type="text/javascript">
+        $(document).ready(function() {
+            $('#autoWidth').lightSlider({
+                autoWidth: true,
+                loop: false,
+                pager: false,
+                prevHtml: '<',
+                nextHtml: '>',
+                onSliderLoad: function() {
+                    $('#autoWidth').removeClass('cS-hidden');
+                }
+            }).goToSlide(6);
+
+        });
+    </script> -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            stagePadding: 15,
+            margin: 10,
+            nav: true,
+            navText: ['<span class="uk-margin-small-right uk-icon" uk-icon="icon: chevron-left"></span>', '<span class="uk-margin-small-left uk-icon" uk-icon="icon: chevron-right"></span>'],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                640: {
+                    items: 2
+                },
+                960: {
+                    items: 3
+                },
+                1200: {
+                    items: 4
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
