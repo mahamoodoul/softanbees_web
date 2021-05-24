@@ -10,32 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
-
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    <link type="text/css" rel="stylesheet" href="asset/js/lightslider.css" />
-    <!-- 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    /> -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
-    <script src="asset/js/lightslider.js"></script>
-
-
 </head>
 
 
@@ -48,8 +29,8 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-            <div id="navbar" class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="navbar" class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Curriculam</a>
                     </li>
@@ -76,8 +57,8 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <button class="button_style_navbar" type="submit">Apply Now</button>
-                    <button class="button_style_navbar_login" type="submit">
+                    <button data-target="#exampleModal" data-toggle="modal" class="button_style_navbar " type="button ">Apply Now</button>
+                    <button data-target="#exampleModal1" data-toggle="modal" class="button_style_navbar_login " type="submit ">
               Login
             </button>
                 </div>
@@ -87,26 +68,121 @@
 
     <!-- navbar ends -->
 
+    <!-- modal login starts -->
+    <div class="modal left fade" id="exampleModal1" tabindex="" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content pt-5">
+                <div class="modal-body p-3">
+                    <div class=" pb-4">
+                        <h3>Log In</h3>
+                        <div class="pt-3">
+                            OR
+                            <a id="create_account_click" style="text-decoration: none;" data-target="#exampleModal" data-toggle="modal" href="">Creating a Softanbees Account</a>
+                        </div>
+                        <div>
+                            <form>
+                                <div class="form-group">
+                                    <label class="d-flex justify-content-start" for="exampleInputEmail1">Email<b style="color: red;">*</b> </label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="d-flex justify-content-start" for="exampleInputPassword1">Password<b style="color: red;">*</b> </label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+                                </div>
+                                <button style="width: 100%; background-color: #f76C6C !important; border-color: #f76C6C !important;" type="submit" class="btn btn-primary">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- modal login ends -->
 
-
+    <!-- modal registraion starts -->
+    <div class="modal left fade" id="exampleModal" tabindex="" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content pt-5">
+                <div class="modal-body pt-1">
+                    <div class="text-center pb-4">
+                        <h3> Ready to work smart and become a rockstar developer?</h3>
+                        <p>Log in using</p>
+                        <div class="d-flex justify-content-around">
+                            <a href=""><i  class="fab fa-facebook fa-3x"></i></a>
+                            <a style="color: #4c68d7;" href=""><i class="fab fa-linkedin fa-3x"></i></a>
+                            <a style="color: #4078c0;" href=""><i  class="fab fa-github fa-3x"></i></a>
+                            <a href=""><i  class="fab fa-google fa-3x"></i></a>
+                        </div>
+                        <div class="d-flex justify-content-around pt-4 pb-4">
+                            <hr style="width:50%" , size="3" , color=black>
+                            <p> OR </p>
+                            <hr style="width:50%" , size="3" , color=black>
+                        </div>
+                        <div>
+                            <form>
+                                <div class="form-group">
+                                    <label class="d-flex justify-content-start" for="exampleInputEmail1">Full Name <b style="color: red;">*</b> </label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="d-flex justify-content-start" for="exampleInputEmail1">Email<b style="color: red;">*</b> </label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="d-flex justify-content-start" for="exampleInputPassword1">Phone<b style="color: red;">*</b> </label>
+                                    <p class="d-flex justify-content-start"><small>OTP will be sent to this number for verification</small></p>
+                                    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter Phone Number">
+                                </div>
+                                <div class="form-group">
+                                    <label class="d-flex justify-content-start" for="exampleInputPassword1">Profession<b style="color: red;">*</b> </label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">College Student</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Working Profesion</label>
+                                    </div>
+                                </div>
+                                <button style="width: 100%; background-color: #f76C6C !important; border-color: #f76C6C !important;" type="submit" class="btn btn-primary">Sign Up</button>
+                            </form>
+                            <small>By creating an account I have read and agree to Softanbees <a href="">Terms</a> and <a href="">Privacy Policy</a></small>
+                            <div class="pt-3">
+                                <p>Already a member?
+                                    <a id="login-btn-click" data-target="#exampleModal1" data-toggle="modal" href="">LOG IN</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal registration ends -->
 
 
     <!-- banner starts -->
-    <section class="banner_header">
-        <div class="container banner_content">
-            <div class="row">
-                <div class="col-sm-6 col-md-6">
+    <section class="banner_header ">
+        <div class="container banner_content ">
+            <div class="row ">
+                <div class="col-sm-6 col-md-6 ">
                     <h1>Expert Curated Learning program to break into ever changing Data Domain</h1>
-                    <b> <h5 class="mt-4">Now experience academy for <span class="highlight highlight--free">FREE&nbsp; </span></h5> </b>
-                    <div class="banner_btn">
-                        <a class="button_style_navbar_login" href="">Book Live Class</a>
-                        <a class="button_style_navbar mt-2" href="">Download Training Catalog</a>
+                    <b> <h5 class="mt-4 ">Now experience academy for <span class="highlight highlight--free ">FREE&nbsp; </span></h5> </b>
+                    <div class="banner_btn ">
+                        <a class="button_style_navbar_login " href=" ">Book Live Class</a>
+                        <a class="button_style_navbar mt-2 " href=" ">Download Training Catalog</a>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-6">
-                    <div class="banner_image">
-                        <img class="img-responsive" src="https://assets.scaler.com/assets/academy/png/boy-93234ea365d9b1fa3db64b4117795c1351df4a7e2ebf8889ac1d62ae2c1e5643.png.gz" alt="" />
+                <div class="col-sm-6 col-md-6 ">
+                    <div class="banner_image ">
+                        <img class="img-responsive " src="https://assets.scaler.com/assets/academy/png/boy-93234ea365d9b1fa3db64b4117795c1351df4a7e2ebf8889ac1d62ae2c1e5643.png.gz " alt=" " />
                     </div>
                 </div>
             </div>
@@ -115,40 +191,38 @@
     <!-- banner ends -->
 
 
-
-
     <!-- System and probelm starts -->
-    <section class="banner_transparent">
-        <div class="container banner_over align-items-center">
-            <div class="text-center">
+    <section class="banner_transparent ">
+        <div class="container banner_over align-items-center ">
+            <div class="text-center ">
                 <h3>
                     A program for data enthusiasts to learn <b>industry standard data product research and development</b>
                 </h3>
             </div>
-            <div class="system_box_margin">
-                <div class="row m-2">
-                    <div style="background-color:#F8E9A1" class="m-4 col-sm-12 col-md-3 system_box">
-                        <img src="https://assets.scaler.com/assets/academy/svg/at-a-glance/structured-c36517d8d41efb3a24cbcb3fe1c8b27ffcfacb6b1462ec3e60516504a07eaff6.svg.gz" alt="">
+            <div class="system_box_margin ">
+                <div class="row m-2 ">
+                    <div style="background-color:#F8E9A1 " class="m-4 col-sm-12 col-md-3 system_box ">
+                        <img src="https://assets.scaler.com/assets/academy/svg/at-a-glance/structured-c36517d8d41efb3a24cbcb3fe1c8b27ffcfacb6b1462ec3e60516504a07eaff6.svg.gz " alt=" ">
                         <h4>Flexible and user oriented, industry vetted curriculum</h4>
                     </div>
-                    <div style="background-color:#F76C6C" class=" m-4 col-sm-12 col-md-3 system_box">
-                        <img src="https://assets.scaler.com/assets/academy/svg/at-a-glance/live-classes-afff2e39f63a26a19ee4ae844d4b0891c20c50e4b670a224564640cbb973f867.svg.gz" alt="">
+                    <div style="background-color:#F76C6C " class=" m-4 col-sm-12 col-md-3 system_box ">
+                        <img src="https://assets.scaler.com/assets/academy/svg/at-a-glance/live-classes-afff2e39f63a26a19ee4ae844d4b0891c20c50e4b670a224564640cbb973f867.svg.gz " alt=" ">
                         <h4>Live classes by data veterans and expert faculties</h4>
                     </div>
-                    <div style="background-color:#A8D0E6" class=" m-4 col-sm-12 col-md-3 system_box">
-                        <img src="https://assets.scaler.com/assets/academy/svg/at-a-glance/project1-9fc6130d4e271198d5f051da0712b27627c872a353dac61c91f248e4f60b6ddf.svg.gz" alt="">
+                    <div style="background-color:#A8D0E6 " class=" m-4 col-sm-12 col-md-3 system_box ">
+                        <img src="https://assets.scaler.com/assets/academy/svg/at-a-glance/project1-9fc6130d4e271198d5f051da0712b27627c872a353dac61c91f248e4f60b6ddf.svg.gz " alt=" ">
                         <h4>Practical experience through real life industry projects</h4>
                     </div>
-                    <div style="background-color:#F76C6C" class="m-4 col-sm-12 col-md-3 system_box">
-                        <img src="https://assets.scaler.com/assets/academy/svg/at-a-glance/flexibility-94067174b36a4a38b3448219f64ccd3e42b3f32667c5ff0ec8d8fab665525d87.svg.gz" alt="">
+                    <div style="background-color:#F76C6C " class="m-4 col-sm-12 col-md-3 system_box ">
+                        <img src="https://assets.scaler.com/assets/academy/svg/at-a-glance/flexibility-94067174b36a4a38b3448219f64ccd3e42b3f32667c5ff0ec8d8fab665525d87.svg.gz " alt=" ">
                         <h4>Regular one & one mentorship by industry experts</h4>
                     </div>
-                    <div style="background-color:#A8D0E6" class="m-4 col-sm-12 col-md-3 system_box">
-                        <img src="https://assets.scaler.com/assets/academy/svg/at-a-glance/career-support-c92399914995cba52680341de44c1ce49d292b1de0f10aeb58c3c58a79e3ad3b.svg.gz" alt="">
+                    <div style="background-color:#A8D0E6 " class="m-4 col-sm-12 col-md-3 system_box ">
+                        <img src="https://assets.scaler.com/assets/academy/svg/at-a-glance/career-support-c92399914995cba52680341de44c1ce49d292b1de0f10aeb58c3c58a79e3ad3b.svg.gz " alt=" ">
                         <h4>Direct support in data science based research </h4>
                     </div>
-                    <div style="background-color:#F8E9A1" class="m-4 col-sm-12 col-md-3 system_box">
-                        <img src="https://assets.scaler.com/assets/academy/svg/at-a-glance/mentor-efc7b3e100e7f2bd17f1f95f4ca28b5205ac3f4e04d4cddd064a800cc63f1c74.svg.gz" alt="">
+                    <div style="background-color:#F8E9A1 " class="m-4 col-sm-12 col-md-3 system_box ">
+                        <img src="https://assets.scaler.com/assets/academy/svg/at-a-glance/mentor-efc7b3e100e7f2bd17f1f95f4ca28b5205ac3f4e04d4cddd064a800cc63f1c74.svg.gz " alt=" ">
                         <h4>Following 80/20 principal in training program design</h4>
                     </div>
                 </div>
@@ -157,11 +231,9 @@
     </section>
     <!-- System and probelm  ends -->
 
-
-
     <!-- Course starts -->
 
-    <section class="section" style="background-color: antiquewhite;">
+    <section class="section upcomming_courses" style="background-color: antiquewhite;">
         <div class="container pt-5">
             <h4 class="text-center">UPCOMING COURSES AND PROGRAMS</h4>
             <br />
@@ -674,75 +746,73 @@
 
     <!-- course ends -->
 
-
-
     <!-- Benifits -->
     <section id="Benifits">
-        <div class="benifits">
+        <div class="benifits ">
             <div class="container ">
-                <h1 style="text-align: center;">Tried & tested curriculum, trusted by thousands of students</h1>
-                <div class="row">
-                    <div class="col-md-6 header-content pageleft">
+                <h1 style="text-align: center; ">Tried & tested curriculum, trusted by thousands of students</h1>
+                <div class="row ">
+                    <div class="col-md-6 header-content pageleft ">
                         <h5>Products in the the markets</h5>
-                        <div class="flex-container">
-                            <div class="icon-style"><i style="width: 25px;" class="fas fa-globe"></i></div>
+                        <div class="flex-container ">
+                            <div class="icon-style "><i style="width: 25px; " class="fas fa-globe "></i></div>
                             <div>
-                                <a href="">Start with web analytics.</a>
+                                <a href=" ">Start with web analytics.</a>
                                 <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
                             </div>
                         </div>
-                        <div class="flex-container">
-                            <div class="icon-style"><i style="width: 25px;" class="fas fa-users"></i></i>
+                        <div class="flex-container ">
+                            <div class="icon-style "><i style="width: 25px; " class="fas fa-users "></i></i>
                             </div>
                             <div>
-                                <a href="">Start with web analytics.</a>
+                                <a href=" ">Start with web analytics.</a>
                                 <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
                             </div>
                         </div>
-                        <div class="flex-container">
-                            <div class="icon-style"><i style="width: 25px;" class="fas fa-laptop-code"></i></div>
+                        <div class="flex-container ">
+                            <div class="icon-style "><i style="width: 25px; " class="fas fa-laptop-code "></i></div>
                             <div>
-                                <a href="">Start with web analytics.</a>
+                                <a href=" ">Start with web analytics.</a>
                                 <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
                             </div>
                         </div>
-                        <div class="flex-container">
-                            <div class="icon-style"><i style="width: 25px;" class="fas fa-database"></i></div>
+                        <div class="flex-container ">
+                            <div class="icon-style "><i style="width: 25px; " class="fas fa-database "></i></div>
                             <div>
-                                <a href="">Start with web analytics.</a>
+                                <a href=" ">Start with web analytics.</a>
                                 <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 header-content">
+                    <div class="col-md-6 header-content ">
                         <h5>Scaler Curiculam</h5>
-                        <div class="flex-container">
-                            <div class="icon-style"><i style="width: 25px;" class="fas fa-globe"></i></div>
+                        <div class="flex-container ">
+                            <div class="icon-style "><i style="width: 25px; " class="fas fa-globe "></i></div>
                             <div>
-                                <a href="">Start with web analytics.</a>
+                                <a href=" ">Start with web analytics.</a>
                                 <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
                             </div>
                         </div>
-                        <div class="flex-container">
-                            <div class="icon-style"><i style="width: 25px;" class="fas fa-users"></i></i>
+                        <div class="flex-container ">
+                            <div class="icon-style "><i style="width: 25px; " class="fas fa-users "></i></i>
                             </div>
                             <div>
-                                <a href="">Start with web analytics.</a>
+                                <a href=" ">Start with web analytics.</a>
                                 <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
                             </div>
                         </div>
-                        <div class="flex-container">
-                            <div class="icon-style"><i style="width: 25px;" class="fas fa-laptop-code"></i></div>
+                        <div class="flex-container ">
+                            <div class="icon-style "><i style="width: 25px; " class="fas fa-laptop-code "></i></div>
                             <div>
-                                <a href="">Start with web analytics.</a>
+                                <a href=" ">Start with web analytics.</a>
                                 <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
                             </div>
                         </div>
-                        <div class="flex-container">
-                            <div class="icon-style"><i style="width: 25px;" class="fas fa-database"></i></div>
+                        <div class="flex-container ">
+                            <div class="icon-style "><i style="width: 25px; " class="fas fa-database "></i></div>
                             <div>
-                                <a href="">Start with web analytics.</a>
+                                <a href=" ">Start with web analytics.</a>
                                 <p>Use award-winning tools to turn vast streams of web data into insights that everyone can act on.</p>
                             </div>
                         </div>
@@ -754,174 +824,172 @@
     <!-- End benifits -->
 
 
-
-
     <!-- testimonial starts -->
 
-    <section id="Teaching" style="background-color:darkgrey;" class="section">
-        <div class="container testimonial">
-            <h1 style="text-align: center;">Your learning is important. It’s a good idea to go through
+    <section id="Teaching" style="background-color:darkgrey; " class="section testimonial_section ">
+        <div class="container testimonial ">
+            <h1 style="text-align: center; ">Your learning is important. It’s a good idea to go through
                 <b> reviews of previous students</b> to make an informed decision</h1>
-            <p style="text-align: center;">1,000+ working professionals have joined the Softanbees Academy family!</p>
-            <div class="items">
-                <div class="item image-name-testimonial">
-                    <div class="flex-items">
-                        <div class="flex-item">
-                            <img src="asset/shakil.jpg" alt="">
+            <p style="text-align: center; ">1,000+ working professionals have joined the Softanbees Academy family!</p>
+            <div class="items ">
+                <div class="item image-name-testimonial ">
+                    <div class="flex-items ">
+                        <div class="flex-item ">
+                            <img src="asset/shakil.jpg " alt=" ">
                         </div>
-                        <div style="width: 200px;" class="flex-item">
+                        <div style="width: 200px; " class="flex-item ">
                             <p>Mahmud Shakil</p>
                             <p><span>Sr. Engineer</span></p>
                         </div>
-                        <div class="flex-item">
-                            <img src="asset/logo.jpg" alt="">
+                        <div class="flex-item ">
+                            <img src="asset/logo.jpg " alt=" ">
                         </div>
                     </div>
-                    <div class="testimonial-content">
+                    <div class="testimonial-content ">
                         <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
                     </div>
-                    <div class="read_more">
-                        <button class="btn btn-danger">Read More ></button>
+                    <div class="read_more ">
+                        <button class="btn btn-danger ">Read More ></button>
                     </div>
                 </div>
-                <div class="item image-name-testimonial">
-                    <div class="flex-items">
-                        <div class="flex-item">
-                            <img src="asset/shakil.jpg" alt="">
+                <div class="item image-name-testimonial ">
+                    <div class="flex-items ">
+                        <div class="flex-item ">
+                            <img src="asset/shakil.jpg " alt=" ">
                         </div>
-                        <div style="width: 200px;" class="flex-item">
+                        <div style="width: 200px; " class="flex-item ">
                             <p>Mahmud Shakil</p>
                             <p><span>Sr. Engineer</span></p>
                         </div>
-                        <div class="flex-item">
-                            <img src="asset/logo.jpg" alt="">
+                        <div class="flex-item ">
+                            <img src="asset/logo.jpg " alt=" ">
                         </div>
                     </div>
-                    <div class="testimonial-content">
+                    <div class="testimonial-content ">
                         <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
                     </div>
-                    <div class="read_more">
-                        <button class="btn btn-danger">Read More ></button>
+                    <div class="read_more ">
+                        <button class="btn btn-danger ">Read More ></button>
                     </div>
                 </div>
-                <div class="item image-name-testimonial">
-                    <div class="flex-items">
-                        <div class="flex-item">
-                            <img src="asset/shakil.jpg" alt="">
+                <div class="item image-name-testimonial ">
+                    <div class="flex-items ">
+                        <div class="flex-item ">
+                            <img src="asset/shakil.jpg " alt=" ">
                         </div>
-                        <div style="width: 200px;" class="flex-item">
+                        <div style="width: 200px; " class="flex-item ">
                             <p>Mahmud Shakil</p>
                             <p><span>Sr. Engineer</span></p>
                         </div>
-                        <div class="flex-item">
-                            <img src="asset/logo.jpg" alt="">
+                        <div class="flex-item ">
+                            <img src="asset/logo.jpg " alt=" ">
                         </div>
                     </div>
-                    <div class="testimonial-content">
+                    <div class="testimonial-content ">
                         <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
                     </div>
-                    <div class="read_more">
-                        <button class="btn btn-danger">Read More ></button>
+                    <div class="read_more ">
+                        <button class="btn btn-danger ">Read More ></button>
                     </div>
                 </div>
-                <div class="item image-name-testimonial">
-                    <div class="flex-items">
-                        <div class="flex-item">
-                            <img src="asset/shakil.jpg" alt="">
+                <div class="item image-name-testimonial ">
+                    <div class="flex-items ">
+                        <div class="flex-item ">
+                            <img src="asset/shakil.jpg " alt=" ">
                         </div>
-                        <div style="width: 200px;" class="flex-item">
+                        <div style="width: 200px; " class="flex-item ">
                             <p>Mahmud Shakil</p>
                             <p><span>Sr. Engineer</span></p>
                         </div>
-                        <div class="flex-item">
-                            <img src="asset/logo.jpg" alt="">
+                        <div class="flex-item ">
+                            <img src="asset/logo.jpg " alt=" ">
                         </div>
                     </div>
-                    <div class="testimonial-content">
+                    <div class="testimonial-content ">
                         <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
                     </div>
-                    <div class="read_more">
-                        <button class="btn btn-danger">Read More ></button>
+                    <div class="read_more ">
+                        <button class="btn btn-danger ">Read More ></button>
                     </div>
                 </div>
-                <div class="item image-name-testimonial">
-                    <div class="flex-items">
-                        <div class="flex-item">
-                            <img src="asset/shakil.jpg" alt="">
+                <div class="item image-name-testimonial ">
+                    <div class="flex-items ">
+                        <div class="flex-item ">
+                            <img src="asset/shakil.jpg " alt=" ">
                         </div>
-                        <div style="width: 200px;" class="flex-item">
+                        <div style="width: 200px; " class="flex-item ">
                             <p>Mahmud Shakil</p>
                             <p><span>Sr. Engineer</span></p>
                         </div>
-                        <div class="flex-item">
-                            <img src="asset/logo.jpg" alt="">
+                        <div class="flex-item ">
+                            <img src="asset/logo.jpg " alt=" ">
                         </div>
                     </div>
-                    <div class="testimonial-content">
+                    <div class="testimonial-content ">
                         <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
                     </div>
-                    <div class="read_more">
-                        <button class="btn btn-danger">Read More ></button>
+                    <div class="read_more ">
+                        <button class="btn btn-danger ">Read More ></button>
                     </div>
                 </div>
-                <div class="item image-name-testimonial">
-                    <div class="flex-items">
-                        <div class="flex-item">
-                            <img src="asset/shakil.jpg" alt="">
+                <div class="item image-name-testimonial ">
+                    <div class="flex-items ">
+                        <div class="flex-item ">
+                            <img src="asset/shakil.jpg " alt=" ">
                         </div>
-                        <div style="width: 200px;" class="flex-item">
+                        <div style="width: 200px; " class="flex-item ">
                             <p>Mahmud Shakil</p>
                             <p><span>Sr. Engineer</span></p>
                         </div>
-                        <div class="flex-item">
-                            <img src="asset/logo.jpg" alt="">
+                        <div class="flex-item ">
+                            <img src="asset/logo.jpg " alt=" ">
                         </div>
                     </div>
-                    <div class="testimonial-content">
+                    <div class="testimonial-content ">
                         <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
                     </div>
-                    <div class="read_more">
-                        <button class="btn btn-danger">Read More ></button>
+                    <div class="read_more ">
+                        <button class="btn btn-danger ">Read More ></button>
                     </div>
                 </div>
-                <div class="item image-name-testimonial">
-                    <div class="flex-items">
-                        <div class="flex-item">
-                            <img src="asset/shakil.jpg" alt="">
+                <div class="item image-name-testimonial ">
+                    <div class="flex-items ">
+                        <div class="flex-item ">
+                            <img src="asset/shakil.jpg " alt=" ">
                         </div>
-                        <div style="width: 200px;" class="flex-item">
+                        <div style="width: 200px; " class="flex-item ">
                             <p>Mahmud Shakil</p>
                             <p><span>Sr. Engineer</span></p>
                         </div>
-                        <div class="flex-item">
-                            <img src="asset/logo.jpg" alt="">
+                        <div class="flex-item ">
+                            <img src="asset/logo.jpg " alt=" ">
                         </div>
                     </div>
-                    <div class="testimonial-content">
+                    <div class="testimonial-content ">
                         <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
                     </div>
-                    <div class="read_more">
-                        <button class="btn btn-danger">Read More ></button>
+                    <div class="read_more ">
+                        <button class="btn btn-danger ">Read More ></button>
                     </div>
                 </div>
-                <div class="item image-name-testimonial">
-                    <div class="flex-items">
-                        <div class="flex-item">
-                            <img src="asset/shakil.jpg" alt="">
+                <div class="item image-name-testimonial ">
+                    <div class="flex-items ">
+                        <div class="flex-item ">
+                            <img src="asset/shakil.jpg " alt=" ">
                         </div>
-                        <div style="width: 200px;" class="flex-item">
+                        <div style="width: 200px; " class="flex-item ">
                             <p>Mahmud Shakil</p>
                             <p><span>Sr. Engineer</span></p>
                         </div>
-                        <div class="flex-item">
-                            <img src="asset/logo.jpg" alt="">
+                        <div class="flex-item ">
+                            <img src="asset/logo.jpg " alt=" ">
                         </div>
                     </div>
-                    <div class="testimonial-content">
+                    <div class="testimonial-content ">
                         <p>Tarun Malhotra's System Design classes stood out to me in particular, his way of teaching has made me remember him even after nearly 6 months of completing the course.</p>
                     </div>
-                    <div class="read_more">
-                        <button class="btn btn-danger">Read More ></button>
+                    <div class="read_more ">
+                        <button class="btn btn-danger ">Read More ></button>
                     </div>
                 </div>
 
@@ -933,18 +1001,18 @@
 
     <!-- advantage starts -->
     <section>
-        <div class="adventage">
-            <div class="">
-                <div class="row">
-                    <div class="adventage-info-1 col-sm-6 header-content">
-                        <h4 class="adventage-paragraph">Learn how Adobe can help you deliver great digital experiences.</h4>
-                        <p class="adventage-paragraph">Find out why Adobe was named a Leader among 16 vendors in the 2021 Gartner Magic Quadrant for Digital Experience Platforms report.</p>
-                        <button class="adventage-btn">Download the Report</button>
+        <div class="adventage ">
+            <div class=" ">
+                <div class="row ">
+                    <div class="adventage-info-1 col-sm-6 header-content ">
+                        <h4 class="adventage-paragraph ">Learn how Adobe can help you deliver great digital experiences.</h4>
+                        <p class="adventage-paragraph ">Find out why Adobe was named a Leader among 16 vendors in the 2021 Gartner Magic Quadrant for Digital Experience Platforms report.</p>
+                        <button class="adventage-btn ">Download the Report</button>
                     </div>
-                    <div class="adventage-info col-sm-6 header-content">
-                        <h4 class="adventage-paragraph">Learn how Adobe can help you deliver great digital experiences.</h4>
-                        <p class="adventage-paragraph">Find out why Adobe was named a Leader among 16 vendors in the 2021 Gartner Magic Quadrant for Digital Experience Platforms report.</p>
-                        <button class="adventage-btn">View The Report</button>
+                    <div class="adventage-info col-sm-6 header-content ">
+                        <h4 class="adventage-paragraph ">Learn how Adobe can help you deliver great digital experiences.</h4>
+                        <p class="adventage-paragraph ">Find out why Adobe was named a Leader among 16 vendors in the 2021 Gartner Magic Quadrant for Digital Experience Platforms report.</p>
+                        <button class="adventage-btn ">View The Report</button>
                     </div>
                 </div>
             </div>
@@ -957,72 +1025,72 @@
 
     <!-- mentor starts  -->
 
-    <section id="Mentorship" style="background-color: grey;" class="section pt-5 pb-5">
-        <div class="container menotr">
-            <h2 style="text-align: center;">Our <b>teaching army</b> will make you <b>confident about your fundamentals</b> </h2>
+    <section id="Mentorship" style="background-color: grey; " class="section pt-5 pb-5 mentroship_section ">
+        <div class="container menotr ">
+            <h2 style="text-align: center; ">Our <b>teaching army</b> will make you <b>confident about your fundamentals</b> </h2>
             <p>Our tutors have built scalable systems and realise the real-life importance of DSA and System Design, not just in interviews but throughout your career</p>
-            <div class="mentor-items">
-                <div class="mentor-item">
-                    <div class="card card-item" style="width: 18rem;">
-                        <img style="height: 210px;" class="card-img-top" src="asset/male.jpg" alt="Card image cap" class="person">
-                        <div class="card-body">
-                            <h5 class="card-title">Mahmud Shakil</h5>
-                            <p>EX <img style="width: 40%; height:20px" src="asset/ibm.png" alt=""></p>
-                            <div class="mentor_read_more">
-                                <a href="#" class="btn btn-primary">Read more ></a>
-                                <a class="linkedin_icon" href=""> <i style="color:#0e76a8;" class="fab fa-linkedin"></i></a>
+            <div class="mentor-items ">
+                <div class="mentor-item ">
+                    <div class="card card-item " style="width: 18rem; ">
+                        <img style="height: 210px; " class="card-img-top " src="asset/male.jpg " alt="Card image cap " class="person ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Mahmud Shakil</h5>
+                            <p>EX <img style="width: 40%; height:20px " src="asset/ibm.png " alt=" "></p>
+                            <div class="mentor_read_more ">
+                                <a class=" read_more_btn btn " href="# ">Read more ></a>
+                                <a class="linkedin_icon " href=" "> <i style="color:#0e76a8; " class="fab fa-linkedin "></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mentor-item">
-                    <div class="card card-item" style="width: 18rem;">
-                        <img style="height: 210px;" class="card-img-top" src="asset/male.jpg" alt="Card image cap" class="person">
-                        <div class="card-body">
-                            <h5 class="card-title">Mahmud Shakil</h5>
-                            <p>EX <img style="width: 40%; height:20px" src="asset/ibm.png" alt=""></p>
-                            <div class="mentor_read_more">
-                                <a href="#" class="btn btn-primary">Read more ></a>
-                                <a class="linkedin_icon" href=""> <i style="color:#0e76a8;" class="fab fa-linkedin"></i></a>
+                <div class="mentor-item ">
+                    <div class="card card-item " style="width: 18rem; ">
+                        <img style="height: 210px; " class="card-img-top " src="asset/male.jpg " alt="Card image cap " class="person ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Mahmud Shakil</h5>
+                            <p>EX <img style="width: 40%; height:20px " src="asset/ibm.png " alt=" "></p>
+                            <div class="mentor_read_more ">
+                                <a class=" read_more_btn btn " href="# ">Read more ></a>
+                                <a class="linkedin_icon " href=" "> <i style="color:#0e76a8; " class="fab fa-linkedin "></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mentor-item">
-                    <div class="card card-item" style="width: 18rem;">
-                        <img style="height: 210px;" class="card-img-top" src="asset/male.jpg" alt="Card image cap" class="person">
-                        <div class="card-body">
-                            <h5 class="card-title">Mahmud Shakil</h5>
-                            <p>EX <img style="width: 40%; height:20px" src="asset/ibm.png" alt=""></p>
-                            <div class="mentor_read_more">
-                                <a href="#" class="btn btn-primary">Read more ></a>
-                                <a class="linkedin_icon" href=""> <i style="color:#0e76a8;" class="fab fa-linkedin"></i></a>
+                <div class="mentor-item ">
+                    <div class="card card-item " style="width: 18rem; ">
+                        <img style="height: 210px; " class="card-img-top " src="asset/male.jpg " alt="Card image cap " class="person ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Mahmud Shakil</h5>
+                            <p>EX <img style="width: 40%; height:20px " src="asset/ibm.png " alt=" "></p>
+                            <div class="mentor_read_more ">
+                                <a class=" read_more_btn btn " href="# ">Read more ></a>
+                                <a class="linkedin_icon " href=" "> <i style="color:#0e76a8; " class="fab fa-linkedin "></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mentor-item">
-                    <div class="card card-item" style="width: 18rem;">
-                        <img style="height: 210px;" class="card-img-top" src="asset/male.jpg" alt="Card image cap" class="person">
-                        <div class="card-body">
-                            <h5 class="card-title">Mahmud Shakil</h5>
-                            <p>EX <img style="width: 40%; height:20px" src="asset/ibm.png" alt=""></p>
-                            <div class="mentor_read_more">
-                                <a href="#" class="btn btn-primary">Read more ></a>
-                                <a class="linkedin_icon" href=""> <i style="color:#0e76a8;" class="fab fa-linkedin"></i></a>
+                <div class="mentor-item ">
+                    <div class="card card-item " style="width: 18rem; ">
+                        <img style="height: 210px; " class="card-img-top " src="asset/male.jpg " alt="Card image cap " class="person ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Mahmud Shakil</h5>
+                            <p>EX <img style="width: 40%; height:20px " src="asset/ibm.png " alt=" "></p>
+                            <div class="mentor_read_more ">
+                                <a class=" read_more_btn btn " href="# ">Read more ></a>
+                                <a class="linkedin_icon " href=" "> <i style="color:#0e76a8; " class="fab fa-linkedin "></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mentor-item">
-                    <div class="card card-item" style="width: 18rem;">
-                        <img style="height: 210px;" class="card-img-top" src="asset/male.jpg" alt="Card image cap" class="person">
-                        <div class="card-body">
-                            <h5 class="card-title">Mahmud Shakil</h5>
-                            <p>EX <img style="width: 40%; height:20px" src="asset/ibm.png" alt=""></p>
-                            <div class="mentor_read_more">
-                                <a href="#" class="btn btn-primary">Read more ></a>
-                                <a class="linkedin_icon" href=""> <i style="color:#0e76a8;" class="fab fa-linkedin"></i></a>
+                <div class="mentor-item ">
+                    <div class="card card-item " style="width: 18rem; ">
+                        <img style="height: 210px; " class="card-img-top " src="asset/male.jpg " alt="Card image cap " class="person ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Mahmud Shakil</h5>
+                            <p>EX <img style="width: 40%; height:20px " src="asset/ibm.png " alt=" "></p>
+                            <div class="mentor_read_more ">
+                                <a class=" read_more_btn btn " href="# ">Read more ></a>
+                                <a class="linkedin_icon " href=" "> <i style="color:#0e76a8; " class="fab fa-linkedin "></i></a>
                             </div>
                         </div>
                     </div>
@@ -1036,18 +1104,18 @@
 
     <!-- softanbess mentor starts -->
 
-    <section id="Mentorship" class="becomae_menotr section pt-5 pb-5">
-        <div class="container">
-            <div class="row d-flex justify-content-center text-center">
-                <div class="col-sm col-md-3">
-                    <img src="https://assets.scaler.com/assets/scaler/png/Group 242-ad5ecbe718f9788691d11aa1b9bfaa5d5c889fbcbeb806f4e73de269007c05f3.png.gz" alt="">
+    <section id="Mentorship" class="becomae_menotr section pt-5 pb-5 ">
+        <div class="container ">
+            <div class="row d-flex justify-content-center text-center ">
+                <div class="col-sm col-md-3 ">
+                    <img src="https://assets.scaler.com/assets/scaler/png/Group 242-ad5ecbe718f9788691d11aa1b9bfaa5d5c889fbcbeb806f4e73de269007c05f3.png.gz " alt=" ">
                 </div>
-                <div class="col-sm col-md-6">
+                <div class="col-sm col-md-6 ">
                     <h2>Become a Softanbees Mentor</h2>
                     <p>A chance to give back to the community. Mentor Scaler students and help them unlock their true potential.</p>
                 </div>
-                <div class="col-sm col-md-3">
-                    <button class="btn btn-info">Know More</button>
+                <div class="col-sm col-md-3 ">
+                    <button class="btn know_more_info ">Know More</button>
                 </div>
             </div>
 
@@ -1058,86 +1126,86 @@
 
     <!-- partnership starts -->
 
-    <section id="partnership" style="background-color: aliceblue;" class="section pt-5 pb-5">
-        <div class="container">
-            <h3 style="text-align: center;">Our alumni work at reputed technology companies and promising startups</h3>
-            <div class="row partnership">
+    <section id="partnership" style="background-color: aliceblue; " class="section pt-5 pb-5 ">
+        <div class="container ">
+            <h3 style="text-align: center; ">Our alumni work at reputed technology companies and promising startups</h3>
+            <div class="row partnership ">
 
-                <div class="col-sm-4 col-md-4 individul-part d-flex justify-content-center">
-                    <div class="partnership-items">
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
+                <div class="col-sm-4 col-md-4 individul-part d-flex justify-content-center ">
+                    <div class="partnership-items ">
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
                         </div>
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
                         </div>
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-4 individul-part d-flex justify-content-center">
-                    <div class="partnership-items">
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
-                        </div>
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
-                        </div>
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-4 individul-part d-flex justify-content-center">
-                    <div class="partnership-items">
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
+                <div class="col-sm-4 col-md-4 individul-part d-flex justify-content-center ">
+                    <div class="partnership-items ">
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
                         </div>
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
                         </div>
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-4 individul-part d-flex justify-content-center">
-                    <div class="partnership-items">
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
-                        </div>
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
-                        </div>
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-4 individul-part d-flex justify-content-center">
-                    <div class="partnership-items">
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
+                <div class="col-sm-4 col-md-4 individul-part d-flex justify-content-center ">
+                    <div class="partnership-items ">
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
                         </div>
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
                         </div>
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-4 individul-part d-flex justify-content-center">
-                    <div class="partnership-items">
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
+                <div class="col-sm-4 col-md-4 individul-part d-flex justify-content-center ">
+                    <div class="partnership-items ">
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
                         </div>
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
                         </div>
-                        <div class="partnership-item">
-                            <img style="width: 100%;" src="asset/google.png" alt="">
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 individul-part d-flex justify-content-center ">
+                    <div class="partnership-items ">
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
+                        </div>
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
+                        </div>
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 individul-part d-flex justify-content-center ">
+                    <div class="partnership-items ">
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
+                        </div>
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
+                        </div>
+                        <div class="partnership-item ">
+                            <img style="width: 100%; " src="asset/google.png " alt=" ">
                         </div>
                     </div>
                 </div>
@@ -1147,335 +1215,286 @@
     <!-- partnership ends -->
 
 
-
-    <section id="contact" style="background-color: azure;" class="section pt-5 pb-5">
-        <div class="container text-center">
-            <div class="mt-4 mb-5">
+<!-- get to know us starts -->
+    <section id="contact" style="background-color: azure; " class="get_to_know_us section pt-5 pb-5 ">
+        <div class="container text-center ">
+            <div class="mt-4 mb-5 ">
                 <h2> Get to know us ! </h2>
                 <h5> Benefit from our free resources</h5>
             </div>
-            <div class="row ml-0.5">
-                <div class="col-sm col-md-4">
-                    <div class="card">
-                        <div class="card-body  text-center">
-                            <div class="mt-4 pb-1">
-                                <h5> <img src="https://assets.scaler.com/assets/academy/svg/IB-fd6e7529e271ec70d81ef76e8c2cde25b2adefebc719b82dfb838349fb97a9e0.svg.gz" alt=""> </h5>
+            <div class="row ml-0.5 ">
+                <div class="col-sm col-md-4 ">
+                    <div class="card ">
+                        <div class="card-body text-center ">
+                            <div class="mt-4 pb-1 ">
+                                <h5> <img src="https://assets.scaler.com/assets/academy/svg/IB-fd6e7529e271ec70d81ef76e8c2cde25b2adefebc719b82dfb838349fb97a9e0.svg.gz " alt=" "> </h5>
                             </div>
-                            <div class="mt-4">
+                            <div class="mt-4 ">
                                 <p>We teach you the basics of some of the most important topics in any <b>rockstar developer’s toolkit</b> , through 1-2 day live classes taken by some of our top Sofanbess Academy faculty. You can use these especially to
                                     get comfortable with our quality and style of teaching!</p>
                             </div>
-                            <div class="mt-5">
-                                <a style="font-weight: 700; text-decoration: none;" href="">VISIT INTERVIEWBIT</a>
+                            <div class="mt-5 ">
+                                <a style="font-weight: 700; text-decoration: none; " href=" ">VISIT INTERVIEWBIT</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm col-md-4">
-                    <div class="card">
-                        <div class="card-body  text-center">
-                            <div class="mt-4">
-                                <h5> <img src="https://assets.scaler.com/assets/academy/svg/micro-courses-4dd8e8c494f79a27ed89029a43b5dcb00e204d35b0b3a5ee2cd7c00ba02a088b.svg.gz" alt=""> MasterClass</h5>
+                <div class="col-sm col-md-4 ">
+                    <div class="card ">
+                        <div class="card-body text-center ">
+                            <div class="mt-4 ">
+                                <h5> <img src="https://assets.scaler.com/assets/academy/svg/micro-courses-4dd8e8c494f79a27ed89029a43b5dcb00e204d35b0b3a5ee2cd7c00ba02a088b.svg.gz " alt=" "> MasterClass</h5>
                             </div>
-                            <div class="mt-4">
+                            <div class="mt-4 ">
                                 <p>We teach you the basics of some of the most important topics in any <b>rockstar developer’s toolkit</b> , through 1-2 day live classes taken by some of our top Sofanbess Academy faculty. You can use these especially to
                                     get comfortable with our quality and style of teaching!</p>
                             </div>
-                            <div class="mt-5">
-                                <a style="font-weight: 700; text-decoration: none;" href="">SIGN UP FOR THE NEXT COURSE</a>
+                            <div class="mt-5 ">
+                                <a style="font-weight: 700; text-decoration: none; " href=" ">SIGN UP FOR THE NEXT COURSE</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm col-md-4">
-                    <div class="card">
-                        <div class="card-body  text-center">
-                            <div class="mt-4">
-                                <h5><img src="https://assets.scaler.com/assets/academy/svg/AMA-3d8298d9e3eef7773d210bfc895d60c6f97a18691a5496a477f0f36c15061b60.svg.gz" alt=""> Ask me Anything (AMAs)</h5>
+                <div class="col-sm col-md-4 ">
+                    <div class="card ">
+                        <div class="card-body text-center ">
+                            <div class="mt-4 ">
+                                <h5><img src="https://assets.scaler.com/assets/academy/svg/AMA-3d8298d9e3eef7773d210bfc895d60c6f97a18691a5496a477f0f36c15061b60.svg.gz " alt=" "> Ask me Anything (AMAs)</h5>
                             </div>
-                            <div class="mt-4">
+                            <div class="mt-4 ">
                                 <p>Connect live with our faculty, mentors, students and alumni, who help you get answers to a wide range of questions, ranging from importance of DSA / System Design to clearing interviews, building a career and achieving
                                     success. Catch these on :</p>
                             </div>
-                            <div class="mt-5">
-                                <a style="font-weight: 700; text-decoration: none;" href="">REGISTER FOR NEXT AMA</a>
+                            <div class="mt-5 ">
+                                <a style="font-weight: 700; text-decoration: none; " href=" ">REGISTER FOR NEXT AMA</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-danger">Apply Now</button>
+            <button type="button " class="btn btn-danger ">Apply Now</button>
         </div>
     </section>
-
-
-
+<!-- get to know us ends  -->
 
 
     <!-- Footer -->
-    <footer id="footer" class="footer bg-white text-dark d-flex-column text-center">
-        <hr class="mt-0">
-        <!--Social buttons-->
-        <section class="mb-4">
-            <!-- Facebook -->
-            <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i
-    ></a>
-
-            <!-- Twitter -->
-            <a class="btn btn-outline-dark  btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i
-    ></a>
-
-            <!-- Google -->
-            <a class="btn btn-outline-dark  btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i
-    ></a>
-
-            <!-- Instagram -->
-            <a class="btn btn-outline-dark  btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i
-    ></a>
-
-            <!-- Linkedin -->
-            <a class="btn btn-outline-dark  btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i
-    ></a>
-
-            <!-- Github -->
-            <a class="btn btn-outline-dark  btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i
-    ></a>
-        </section>
-        <!-- Section: Social media -->
-
-        <!-- Section: Form -->
-        <section class="">
-            <form action="">
-                <!--Grid row-->
-                <div class="row d-flex justify-content-center">
-                    <!--Grid column-->
-                    <div class="col-auto">
-                        <p class="pt-2">
-                            <strong>Sign up for our newsletter</strong>
-                        </p>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-5 col-12">
-                        <!-- Email input -->
-                        <div class="form-outline form-dark mb-4">
-                            <input type="email" id="form5Example2" class="form-control" placeholder="Enter Your Email Here" />
-                            <!-- <label class="form-label" for="form5Example2">Email address</label> -->
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-auto">
-                        <!-- Submit button -->
-                        <button style="height: 40px; width: 150px !important;" type="submit" class="button-style mb-4">
-            Subscribe  <i class="fas fa-mail-bulk"> </i>
-          </button>
-                    </div>
-                    <!--Grid column-->
-                </div>
-                <!--Grid row-->
-            </form>
-        </section>
-        <!-- Section: Form -->
-
-        <!-- Section: Text -->
-        <section class="mb-4">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam eum harum corrupti dicta, aliquam sequi voluptate quas.
+<!-- Footer -->
+<footer id="footer" class="footer text-dark d-flex-column text-center">
+    <hr class="mt-0">
+    <!--Social buttons-->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+  
+      <!-- Twitter -->
+      <a class="btn btn-outline-dark  btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+  
+      <!-- Google -->
+      <a class="btn btn-outline-dark  btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+  
+      <!-- Instagram -->
+      <a class="btn btn-outline-dark  btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+  
+      <!-- Linkedin -->
+      <a class="btn btn-outline-dark  btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+  
+      <!-- Github -->
+      <a class="btn btn-outline-dark  btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
             </p>
-        </section>
-        <!-- Section: Text -->
-        <!--/.Social buttons-->
-        <hr class="mb-0">
-        <!--Footer Links-->
-        <div class="container text-left text-md-center">
-            <div class="row">
-                <!--First column-->
-                <div class="col-md-3 mx-auto shfooter">
-                    <h5 class="my-2 font-weight-bold d-none d-md-block">Product</h5>
-                    <div class="d-md-none title" data-target="#Product" data-toggle="collapse">
-                        <div class="mt-3 font-weight-bold">Product
-                            <div class="float-right navbar-toggler">
-                                <i class="fas fa-angle-down"></i>
-                                <i class="fas fa-angle-up"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="list-unstyled collapse" id="Product">
-                        <li><a href="">Create Websites</a></li>
-                        <li><a href="">Secure Cloud Hosting</a></li>
-                        <li><a href="">Engage Your Audience</a></li>
-                        <li><a href="">Website Support</a></li>
-                    </ul>
-                </div>
-                <!--/.First column-->
-                <hr class="clearfix w-100 d-md-none mb-0">
-                <!--Second column-->
-                <div class="col-md-3 mx-auto shfooter">
-                    <h5 class="my-2 font-weight-bold d-none d-md-block">Company</h5>
-                    <div class="d-md-none title" data-target="#Company" data-toggle="collapse">
-                        <div class="mt-3 font-weight-bold">Company
-                            <div class="float-right navbar-toggler">
-                                <i class="fas fa-angle-down"></i>
-                                <i class="fas fa-angle-up"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="list-unstyled collapse" id="Company">
-                        <li><a href="">About</a></li>
-                        <li><a href="">Careers</a></li>
-                        <li><a href="">Support</a></li>
-                        <li><a href="">Pricing</a></li>
-                        <li><a href="">FAQ</a></li>
-                    </ul>
-                </div>
-                <!--/.Second column-->
-                <hr class="clearfix w-100 d-md-none mb-0">
-                <!--Third column-->
-                <div class="col-md-3 mx-auto shfooter">
-                    <h5 class="my-2 font-weight-bold d-none d-md-block">Resources</h5>
-                    <div class="d-md-none title" data-target="#Resources" data-toggle="collapse">
-                        <div class="mt-3 font-weight-bold">Resources
-                            <div class="float-right navbar-toggler">
-                                <i class="fas fa-angle-down"></i>
-                                <i class="fas fa-angle-up"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="list-unstyled collapse" id="Resources">
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">eBooks</a></li>
-                        <li><a href="">Whitepapers</a></li>
-                        <li><a href="">Comparison Guide</a></li>
-                        <li><a href="">Website Grader</a></li>
-                    </ul>
-                </div>
-                <!--/.Third column-->
-                <hr class="clearfix w-100 d-md-none mb-0">
-                <!--Fourth column-->
-                <div class="col-md-3 mx-auto shfooter">
-                    <h5 class="my-2 font-weight-bold d-none d-md-block">Get Help</h5>
-                    <div class="d-md-none title" data-target="#Get-Help" data-toggle="collapse">
-                        <div class="mt-3 font-weight-bold">Get Help
-                            <div class="float-right navbar-toggler">
-                                <i class="fas fa-angle-down"></i>
-                                <i class="fas fa-angle-up"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="list-unstyled collapse" id="Get-Help">
-                        <li><a href="" target="_blank">Help Center</a></li>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Terms</a></li>
-                        <li><a href="">Login</a></li>
-                    </ul>
-                </div>
-                <!--/.Fourth column-->
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-dark mb-4">
+              <input type="email" id="form5Example2" class="form-control" placeholder="Enter Your Email Here" />
+              <!-- <label class="form-label" for="form5Example2">Email address</label> -->
             </div>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button style="height: 40px; width: 150px !important;" type="submit" class="button-style mb-4">
+              Subscribe  <i class="fas fa-mail-bulk"> </i>
+            </button>
+          </div>
+          <!--Grid column-->
         </div>
-        <!--/.Footer Links-->
-        <hr class="mb-0">
-        <!--Copyright-->
-        <div class="py-3 text-center">
-            Copyright @Softnbees Private Comapny Ltd 2019-
-            <script>
-                document.write(new Date().getFullYear())
-            </script>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+  
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+    <!-- Section: Text -->
+    <!--/.Social buttons-->
+    <hr class="mb-0">
+    <!--Footer Links-->
+    <div class="container text-left text-md-center">
+      <div class="row">
+        <!--First column-->
+        <div class="col-md-3 mx-auto shfooter">
+          <h5 class="my-2 font-weight-bold d-none d-md-block">Product</h5>
+          <div class="d-md-none title" data-target="#Product" data-toggle="collapse">
+            <div class="mt-3 font-weight-bold">Product
+              <div class="float-right navbar-toggler">
+                <i class="fas fa-angle-down"></i>
+                <i class="fas fa-angle-up"></i>
+              </div>
+            </div>
+          </div>
+          <ul class="list-unstyled collapse" id="Product">
+            <li><a href="">Create Websites</a></li>
+            <li><a href="">Secure Cloud Hosting</a></li>
+            <li><a href="">Engage Your Audience</a></li>
+            <li><a href="">Website Support</a></li>
+          </ul>
         </div>
-        <!--/.Copyright-->
-    </footer>
+        <!--/.First column-->
+        <hr class="clearfix w-100 d-md-none mb-0">
+        <!--Second column-->
+        <div class="col-md-3 mx-auto shfooter">
+          <h5 class="my-2 font-weight-bold d-none d-md-block">Company</h5>
+          <div class="d-md-none title" data-target="#Company" data-toggle="collapse">
+            <div class="mt-3 font-weight-bold">Company
+              <div class="float-right navbar-toggler">
+                <i class="fas fa-angle-down"></i>
+                <i class="fas fa-angle-up"></i>
+              </div>
+            </div>
+          </div>
+          <ul class="list-unstyled collapse" id="Company">
+            <li><a href="">About</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">FAQ</a></li>
+          </ul>
+        </div>
+        <!--/.Second column-->
+        <hr class="clearfix w-100 d-md-none mb-0">
+        <!--Third column-->
+        <div class="col-md-3 mx-auto shfooter">
+          <h5 class="my-2 font-weight-bold d-none d-md-block">Resources</h5>
+          <div class="d-md-none title" data-target="#Resources" data-toggle="collapse">
+            <div class="mt-3 font-weight-bold">Resources
+              <div class="float-right navbar-toggler">
+                <i class="fas fa-angle-down"></i>
+                <i class="fas fa-angle-up"></i>
+              </div>
+            </div>
+          </div>
+          <ul class="list-unstyled collapse" id="Resources">
+            <li><a href="">Blog</a></li>
+            <li><a href="">eBooks</a></li>
+            <li><a href="">Whitepapers</a></li>
+            <li><a href="">Comparison Guide</a></li>
+            <li><a href="">Website Grader</a></li>
+          </ul>
+        </div>
+        <!--/.Third column-->
+        <hr class="clearfix w-100 d-md-none mb-0">
+        <!--Fourth column-->
+        <div class="col-md-3 mx-auto shfooter">
+          <h5 class="my-2 font-weight-bold d-none d-md-block">Get Help</h5>
+          <div class="d-md-none title" data-target="#Get-Help" data-toggle="collapse">
+            <div class="mt-3 font-weight-bold">Get Help
+              <div class="float-right navbar-toggler">
+                <i class="fas fa-angle-down"></i>
+                <i class="fas fa-angle-up"></i>
+              </div>
+            </div>
+          </div>
+          <ul class="list-unstyled collapse" id="Get-Help">
+            <li><a href="" target="_blank">Help Center</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Login</a></li>
+          </ul>
+        </div>
+        <!--/.Fourth column-->
+      </div>
+    </div>
+    <!--/.Footer Links-->
+    <hr class="mb-0">
+    <!--Copyright-->
+    <div class="py-3 text-center">
+      Copyright @Softnbees Private Comapny Ltd 2019-
+      <script>
+        document.write(new Date().getFullYear())
+      </script>
+    </div>
+    <!--/.Copyright-->
+  </footer>
+  
+  <!-- Footer -->
+<!-- Ends footer -->
 
-    <!-- Footer -->
-
-    <script src="" async defer></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js "></script>
     <script src="asset/js/vanillajs-scrollspy.min.js"></script>
 
 
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
-    <!-- MDB core JavaScript -->
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script> -->
-    <script>
-        const navbar = document.querySelector("#navbar");
-        const scrollspy = new VanillaScrollspy(navbar);
-        scrollspy.init();
-
-        // JavaScript Document
-        $(document).ready(function() {
-            $('#autoWidth').lightSlider({
-                autoWidth: true,
-                loop: true,
-                onSliderLoad: function() {
-                    $('#autoWidth').removeClass('cS-hidden');
-                }
-            });
-        });
-    </script>
-
 </body>
 
 </html>
-<!--/.Fourth column-->
-</div>
-</div>
-<!--/.Footer Links-->
-<hr class="mb-0">
-<!--Copyright-->
-<div class="py-3 text-center">
-    Copyright @Softnbees Private Comapny Ltd 2019-
-    <script>
-        document.write(new Date().getFullYear())
-    </script>
-</div>
-<!--/.Copyright-->
-</footer>
 
-<!-- Footer -->
-
-<script src="" async defer></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<script src="asset/js/vanillajs-scrollspy.min.js"></script>
-
-
-
-<!-- Bootstrap core JavaScript -->
-<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
-<!-- MDB core JavaScript -->
-<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script> -->
 <script>
+   
     const navbar = document.querySelector("#navbar");
     const scrollspy = new VanillaScrollspy(navbar);
     scrollspy.init();
-
-    // JavaScript Document
+         
     $(document).ready(function() {
-        $('#autoWidth').lightSlider({
-            autoWidth: true,
-            loop: true,
-            onSliderLoad: function() {
-                $('#autoWidth').removeClass('cS-hidden');
-            }
+        $("#login-btn-click").click(function() {
+            $('#exampleModal').modal('hide');
         });
+
+        $("#create_account_click").click(function() {
+            $('#exampleModal1').modal('hide');
+
+        });
+
     });
 </script>
-
-</body>
-
-</html>

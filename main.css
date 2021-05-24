@@ -1,3 +1,7 @@
+
+/* navbar starts */
+
+
 .nav-item a {
     font-weight: 700;
     color: #17171d;
@@ -75,12 +79,13 @@
     background-color: antiquewhite;
     padding-top: 116px !important;
     padding-left: 50px;
+    background-image: url("asset/bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
-/* .banner_btn {
-    margin-left: 50px;
-} */
 
 .banner_btn {
     margin: 30px 10px 15px -12px;
@@ -191,6 +196,14 @@
     background-color: #f76C6C!important;
 }
 
+.upcomming_courses {
+    background-color: antiquewhite;
+    background-image: url("asset/bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /* .tab-content{
   
@@ -221,7 +234,7 @@
     background-size: cover;
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: bisque;
+    background-color: white;
 }
 
 .flex-container {
@@ -242,6 +255,13 @@
 
 .pageleft {
     border-right: 2px solid whitesmoke;
+}
+
+.testimonial_section {
+    background-image: url("asset/bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .testimonial {
@@ -292,6 +312,13 @@
     padding-top: 10px;
 }
 
+.mentroship_section {
+    background-image: url("asset/bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .menotr p {
     text-align: center;
     font-weight: 700;
@@ -321,6 +348,14 @@
     margin-top: 10px;
     border-top: 1px solid darkblue;
     padding-top: 20px;
+}
+
+.read_more_btn {
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #374785;
+    border: #374785;
+    text-decoration: none;
 }
 
 .linkedin_icon {
@@ -385,9 +420,13 @@
 }
 
 .becomae_menotr {
-    background-color: #0e76a8;
+    background-color: #A8D0E6;
     width: 100%;
     height: auto;
+}
+
+.know_more_info {
+    background-color: #f76C6C;
 }
 
 .becomae_menotr button {
@@ -461,9 +500,28 @@
     color: #c0292b;
     transition: all ease 0.5s;
 }
-
-
 /*--responsive for mobile phone--*/
+
+
+
+
+/* get to know us starts */
+.get_to_know_us{
+    background-image: url("asset/bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* get to know us ends */
+
+
+/* footer start  */
+.footer{
+    background-color: lightgray;
+}
+
+/* footer end */
 
 @media(max-width:720px) {
     .box {
@@ -478,6 +536,58 @@
         width: 250px;
     }
 }
+
+
+/* modal starts */
+
+.modal.left .modal-dialog {
+    position: fixed;
+    right: 0;
+    margin: auto;
+    width: 363px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal.right .modal-body {
+    padding: 15px 15px 80px;
+}
+
+.modal.right.fade .modal-dialog {
+    left: -320px;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.right.fade.show .modal-dialog {
+    right: 0;
+}
+
+
+/* ----- MODAL STYLE ----- */
+
+.modal-content {
+    border-radius: 0;
+    border: none;
+}
+
+.modal-header {
+    border-bottom-color: #eeeeee;
+    background-color: #fafafa;
+}
+
+
+/* modal end */
 
 
 /* partnership ends */
