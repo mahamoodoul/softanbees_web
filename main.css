@@ -73,6 +73,15 @@
     -webkit-box-shadow 0.2s ease-out;
 }
 
+
+#canvas{
+  border: 2px solid red;
+  width: 100% !important;
+  height: 500px;
+  margin-top: 90px;
+}
+
+
 .banner_header {
   width: 100%;
   height: 750px;
@@ -112,8 +121,8 @@
 }
 
 .banner_transparent {
-  margin-top: -15rem;
-  background: transparent;
+  /* margin-top: -15rem; */
+  /* background: transparent; */
 }
 
 .system_box_margin {
@@ -215,11 +224,24 @@
 
 /* benifits */
 
-.border-middle{
-    border-right: 5px solid #f76c6c; 
+.box_border{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px gainsboro;
+  color: indianred;
+
 }
 
+.box_border h5 {
+  font-weight: bold !important;
+}
+.box_border span{
+  font-size: 55px;
+}
 
+/* .border-middle{
+    border-right: 5px solid #f76c6c; 
+}
 .corporate {
   background-color: #fc4141;
   border-radius: 5px;
@@ -268,7 +290,7 @@
 }
 .trained span {
   font-size: 45px;
-}
+} */
 
 
 
@@ -647,6 +669,7 @@
     padding-left: 0px;
     text-align: center;
     height: auto;
+
   }
   .banner_btn {
     margin-left: 0px;
@@ -728,4 +751,12 @@
 }
 
   /* benifits ends */
+
+
+  /*  particales */
+
+  #particles{
+    width: 100%;
+    height: 600px;
+}
 }

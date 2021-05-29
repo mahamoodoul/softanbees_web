@@ -13,10 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="asset/css/particle.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
 </head>
 
 
@@ -32,10 +34,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul id="navbar" class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Curriculam</a>
+                        <a class="nav-link" aria-current="page" href="#courses">Curriculam</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Benifits">Benifits</a>
+                        <a class="nav-link" href="#trusting">Benifits</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Teaching">Teaching</a>
@@ -52,9 +54,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#footer">About Us</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#">FAQs</a>
-                    </li>
+                    </li> -->
                 </ul>
                 <div class="d-flex">
                     <button data-target="#exampleModal" data-toggle="modal" class="button_style_navbar " type="button ">Apply Now</button>
@@ -169,25 +171,25 @@
 
 
     <!-- banner starts -->
-    <section class="banner_header ">
-        <div class="container banner_content ">
-            <div class="row ">
-                <div class="col-sm-6 col-md-6 ">
-                    <h1>Expert Curated Learning program to break into ever changing Data Domain</h1>
-                    <b> <h5 class="mt-4 ">Now experience academy for <span class="highlight highlight--free ">FREE&nbsp; </span></h5> </b>
-                    <div class="banner_btn ">
-                        <a class="button_style_navbar_login " href=" ">Book Live Class</a>
-                        <a class="button_style_navbar mt-2 " href=" ">Download Training Catalog</a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 ">
-                    <div class="banner_image ">
-                        <img class="img-responsive " src="https://assets.scaler.com/assets/academy/png/boy-93234ea365d9b1fa3db64b4117795c1351df4a7e2ebf8889ac1d62ae2c1e5643.png.gz " alt=" " />
+    <!-- <section class="banner_header "> -->
+    <!-- <canvas  style="background: white;" width="500" height="500" id="canvas"></canvas> -->
+    <section id="particles_section" style="padding-bottom: 80px;" >
+        <div id="particles">
+            <div class="intro pb-5 ">
+                <div class="container">
+                    <h1>Drop Your Email Now to Join our Free Class and Start your Data Journey Now!!</h1>
+                    <div class="input-group mt-5">
+                        <input type="text" class="form-control" placeholder="Email Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn btn-journey " type="button">Button</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+  
+    <!-- </section> -->
     <!-- banner ends -->
 
 
@@ -233,7 +235,7 @@
 
     <!-- Course starts -->
 
-    <section class="section upcomming_courses" style="background-color: antiquewhite;">
+    <section id="courses" class="section upcomming_courses" style="background-color: antiquewhite;">
         <div class="container pt-5">
             <h4 class="text-center">UPCOMING COURSES AND PROGRAMS</h4>
             <br />
@@ -564,39 +566,50 @@
     <!-- course ends -->
 
     <!-- Benifits -->
-<section style="background-color:azure;" id="trusting">
+<section style="background-color: white;" id="trusting">
     <div class="container text-center pt-4">
         <h3>Why Trusting Us?</h3>
-        <div class="row   pt-5 pb-5">
-            <div class="col-sm col-md-6 border-middle">
-                <div class="corporate p-2 m-3" >
+        <div class="row ">
+            <div class="col-sm col-md-4 ">
+                <div class="corporate p-2 m-3 pt-4 pb-3 box_border" >
                     <h5>Nubmer of Corporates</h5>
                     <h5><span class="count" >7</span> +</h5>
                   
                 </div>
-                <div class="products p-2 m-3">
+            </div>
+            <div class="col-sm col-md-4 ">
+                <div class="products p-2 m-3 pt-4 pb-3 box_border">
                     <h5>Nubmer of Products </h5>
                     <h5><span class="count" >10</span> +</h5>
                 </div>
-                <div class="scientist p-2 m-3" >
+            </div>
+            <div class="col-sm col-md-4 ">
+                <div class="scientist p-2 m-3 pt-4 pb-3 box_border" >
                     <h5>Total Trained Data Scientist</h5>
                     <h5><span class="count">120</span> +</h5>
                 </div>
             </div>
+               
             
-            <div class="col-sm col-md-6">
-                <div class="intership p-2 m-3" >
+            <div class="col-sm col-md-4 ">
+                <div class="intership p-2 m-3 pt-4 pb-3 box_border" >
                     <h5>Total Paid Internship Provided</h5>
                     <h5> <span class="count">25</span> +</h5>
                 </div>
-                <div class="aspirants p-2 m-3">
+            </div>
+            <div class="col-sm col-md-4">
+                <div class="aspirants p-2 m-3 pt-4 pb-3 box_border">
                     <h5>Total Aspirants Reached</h5>
                     <h5><span class="count">2500</span> +</h5>
                 </div>
-                <div class="trained p-2 m-3">
+            </div>
+            <div class="col-sm col-md-4">
+                <div class="trained p-2 m-3 pt-4 pb-3 box_border">
                     <h5>Total Trained Data Scientist</h5>
                     <h5><span class="count">120</span> +</h5>
-                </div> 
+                </div>
+            </div>
+              
             </div>
         </div>
     </div>
@@ -1153,6 +1166,9 @@
     <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
+    <script type='text/javascript' src='asset/js/jquery.particleground.min.js'></script>
+    <script type='text/javascript' src='asset/js/demo.js'></script>
     <!-- Bootstrap tooltips -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
@@ -1181,7 +1197,6 @@
 
         });
         
-
         $('.count').countUp();
         $('.count').countDown();
 
@@ -1194,5 +1209,13 @@
             'time': 4000,
             'delay': 10
          });
+
     });
+
+
+
+
+
+
+
 </script>
