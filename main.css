@@ -5,6 +5,16 @@
   color: #17171d;
 }
 
+.main_nav_content{
+  padding-top: 20px !important;
+}
+
+
+
+
+
+
+
 .button_style_navbar {
   text-decoration: none;
   text-align: center;
@@ -349,8 +359,8 @@
 }
 
 .items .item {
-  min-width: 346px;
-  height: 420px;
+  min-width: 313px;
+  height: 487px;
   background: white;
   margin: 10px;
   border-radius: 5px;
@@ -660,6 +670,8 @@
 /* partnership ends */
 
 @media only screen and (max-width: 770px) {
+
+  
   .banner_transparent {
     margin-top: 0rem;
     background: whitesmoke;

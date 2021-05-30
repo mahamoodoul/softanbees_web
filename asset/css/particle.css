@@ -7,6 +7,12 @@
     text-align: center;
 }
 
+.input-btn-main{
+  border-radius: 25px !important;
+  height: 80px !important;
+}
+
+
 
 
 .flex1 {
@@ -17,24 +23,26 @@
   }
 
 .btn-journey {
+    position: absolute !important;
+    z-index: 10 !important;
+    margin-left: -8rem;
+    margin-top: 18px;
     text-decoration: none;
     text-align: center;
     color: #17171d;
     background-color: #f16161;
-    border-radius: 10px;
-    border: 5px solid #f16161;
-    border-width: 2px;
-    border-style: solid;
-    text-decoration: none;
+    border-radius: 10px !important;
+    border: 5px solid #f16161 !important;
+    border-width: 2px !important;
+    border-style: solid !important;
     height: 40px;
     padding: 4px 14px;
     min-height: 30px;
     min-width: 100px;
-    /* top right bottom left */
     padding-bottom: 4.5px;
     padding-top: 5.5px;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 17px !important;
+    font-weight: 700 !important;
     opacity: 0.9;
   }
   
