@@ -58,3 +58,59 @@
       -webkit-box-shadow 0.2s ease-out;
   }
   
+
+
+
+  /* profession select button starts */
+
+#profession {
+  margin:4px;
+  /* float:left; */
+}
+
+#profession label {
+  /* float:left; */
+  width:100px;
+  margin:4px;
+  background-color:#EFEFEF;
+  border-radius:4px;
+  border:1px solid #D0D0D0;
+  overflow:auto;
+  cursor: pointer;
+     
+}
+
+#profession label span {
+  text-align:center;
+  font-size: 13px;
+  padding:13px 0px;
+  display:block;
+  font-weight: bold;
+}
+
+#profession label input {
+  position:absolute;
+  display: none;
+  top:-20px;
+}
+
+#profession input:checked + span {
+  background-color:#f80404;
+  color:#F7F7F7;
+}
+
+
+
+#profession .blue {
+  background-color:#bff109;
+  color:#333;
+}
+
+#profession .green {
+  background-color:#dbb449;
+  color:#333;
+}
+
+
+
+/* end profession selct button */
