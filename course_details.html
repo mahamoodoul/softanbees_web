@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="asset/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="course_details.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jwplayer.com/libraries/aBCdE12G.js"></script>
+    <link rel="stylesheet" href="asset/css/particle.css" />
+  </head>
+
+  <body>
+    <!-- nabvar starts -->
+
+    <nav
+      class="
+        main_nav_content
+        fixed-top
+        navbar navbar-expand-lg navbar-light
+        bg-white
+      "
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul id="navbar" class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#courses"
+                >Curriculam</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#trusting">Benifits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Teaching">Teaching</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Mentorship">Mentorship</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#partnership">Partnership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <!-- <li class="nav-item">
+                        <a class="nav-link" href="#footer">About Us</a>
+                    </li> -->
+            <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">FAQs</a>
+                    </li> -->
+          </ul>
+          <div class="d-flex">
+            <button
+              data-target="#exampleModal"
+              data-toggle="modal"
+              class="button_style_navbar"
+              type="button "
+            >
+              Apply Now
+            </button>
+            <!-- <button data-target="#exampleModal1" data-toggle="modal" class="button_style_navbar_login " type="submit ">
+              Login
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar ends -->
+
+    <!-- modal login starts -->
+    <div
+      class="modal left fade"
+      id="exampleModal1"
+      tabindex=""
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content pt-5">
+          <div class="modal-body p-3">
+            <div class="pb-4">
+              <h3>Log In</h3>
+              <div class="pt-3">
+                OR
+                <a
+                  id="create_account_click"
+                  style="text-decoration: none"
+                  data-target="#exampleModal"
+                  data-toggle="modal"
+                  href=""
+                  >Creating a Softanbees Account</a
+                >
+              </div>
+              <div>
+                <form>
+                  <div class="form-group">
+                    <label
+                      class="d-flex justify-content-start"
+                      for="exampleInputEmail1"
+                      >Email<b style="color: red">*</b>
+                    </label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label
+                      class="d-flex justify-content-start"
+                      for="exampleInputPassword1"
+                      >Password<b style="color: red">*</b>
+                    </label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      placeholder="Enter Password"
+                    />
+                  </div>
+                  <button
+                    style="
+                      width: 100%;
+                      background-color: #f76c6c !important;
+                      border-color: #f76c6c !important;
+                    "
+                    type="submit"
+                    class="btn btn-primary"
+                  >
+                    Sign Up
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal login ends -->
+
+    <!-- modal registraion starts -->
+    <div
+      class="modal left fade"
+      id="exampleModal"
+      tabindex=""
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content pt-5">
+          <div class="modal-body pt-1">
+            <div class="text-center pb-4">
+              <h3>Apply Now to Unleash Your Data Career</h3>
+              <!-- <p>Log in using</p>
+                        <div class="d-flex justify-content-around">
+                            <a href=""><i  class="fab fa-facebook fa-3x"></i></a>
+                            <a style="color: #4c68d7;" href=""><i class="fab fa-linkedin fa-3x"></i></a>
+                            <a style="color: #4078c0;" href=""><i  class="fab fa-github fa-3x"></i></a>
+                            <a href=""><i  class="fab fa-google fa-3x"></i></a>
+                        </div> -->
+              <div class="d-flex justify-content-around pt-4 pb-4">
+                <!-- <hr style="width:50%" , size="3" , color=black>
+                            <p> OR </p>
+                            <hr style="width:50%" , size="3" , color=black> -->
+              </div>
+              <div>
+                <form>
+                  <div class="form-group">
+                    <label
+                      class="d-flex justify-content-start"
+                      for="exampleInputEmail1"
+                      >Full Name <b style="color: red">*</b>
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      placeholder="Enter Your Name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label
+                      class="d-flex justify-content-start"
+                      for="exampleInputEmail1"
+                      >Email<b style="color: red">*</b>
+                    </label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter email"
+                    />
+                  </div>
+                  <!-- <div class="form-group">
+                                    <label class="d-flex justify-content-start" for="exampleInputPassword1">Phone<b style="color: red;">*</b> </label>
+                                    <p class="d-flex justify-content-start"><small>OTP will be sent to this number for verification</small></p>
+                                    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter Phone Number">
+                                </div> -->
+                  <!-- <div class="form-group">
+                                    <label class="d-flex justify-content-start" for="exampleInputPassword1">Profession<b style="color: red;">*</b> </label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">College Student</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Working Profesion</label>
+                                    </div>
+                                </div> -->
+                  <div class="form-group">
+                    <h6>Your Profession</h6>
+                    <div id="profession">
+                      <label class="blue"
+                        ><input
+                          id="check1"
+                          type="radio"
+                          name="toggle"
+                          value="student"
+                        /><span>College Student</span></label
+                      >
+                      <label class="green"
+                        ><input
+                          id="check1"
+                          type="radio"
+                          name="toggle"
+                          value="working"
+                        /><span>Working Profession</span></label
+                      >
+                    </div>
+                  </div>
+                  <button
+                    style="
+                      width: 100%;
+                      background-color: #f76c6c !important;
+                      border-color: #f76c6c !important;
+                    "
+                    type="submit"
+                    class="btn btn-primary"
+                  >
+                    Apply Now
+                  </button>
+                </form>
+                <!-- <small>By creating an account I have read and agree to Softanbees <a href="">Terms</a> and <a href="">Privacy Policy</a></small>
+                            <div class="pt-3">
+                                <p>Already a member?
+                                    <a id="login-btn-click" data-target="#exampleModal1" data-toggle="modal" href="">LOG IN</a>
+                                </p>
+                            </div> -->
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal registration ends -->
+
+
+
+
+
+    <section id="course_details" class="section">
+      <div class="container pt-5 pb-5">
+        <div>
+          <h1>Data Scientist</h1>
+          <h5>Indrustrial based program</h5>
+          <p style="color: white">
+            This Data Science course, in collaboration with IBM, features
+            exclusive IBM hackathons, masterclass, and Ask-me-anything sessions
+            for the best training experience. This Data Scientist certification
+            training provides hands-on exposure to key technologies including R,
+            Python, Machine Learning, Tableau, Hadoop, and Spark via live
+            interaction with practitioners, practical labs, and industry
+            projects.
+          </p>
+        </div>
+        <div class="mt-5">
+          <p style="color: white">In Collaboration With</p>
+          <div class="collboration-title mb-3"></div>
+          <div class="collboration-logo-top"></div>
+          <div class="collboration">
+            <img
+              style="width: 10%; height: 33px"
+              src="asset/partner_1.jpeg"
+              alt=" "
+            />
+            <!-- <img style="width: 8%; " src="asset/partner_3.png" alt=" "> -->
+          </div>
+          <div class="collboration-logo-bottom"></div>
+        </div>
+        <div class="mt-5">
+          <button class="syllabus">Download Syllabus</button>
+        </div>
+      </div>
+    </section>
+
+    <section style="background-color: azure" class="section pt-5 pb-5">
+      <div class="container">
+        <div class="collboration-1 pb-3">
+          <div class="mr-3">
+            <h5>World’s #1</h5>
+            <h5>Online Bootcamp</h5>
+          </div>
+          <div class="mr-3">
+            <h5>World’s #1</h5>
+            <h5>Online Bootcamp</h5>
+          </div>
+          <div class="mr-3">
+            <h5>World’s #1</h5>
+            <h5>Online Bootcamp</h5>
+          </div>
+        </div>
+
+        <div class="row pt-5">
+          <div class="col-md-6 border-line">
+            <p>Exclusive Hackathons and Live interaction with IBM leadership</p>
+            <small
+              >Includes live Master Classes and Ask me anything sessions</small
+            >
+            <br /><br />
+            <p>Capstone and 15+ real-life Data Science projects</p>
+            <small>Built on datasets of Amazon, UBER, Comcast.</small>
+          </div>
+          <div class="col-md-6 border-line-1">
+            <p>220+ hours of live interactive learning</p>
+            <small>Live Data Science online classes by industry experts</small>
+            <br /><br />
+            <p>Annual Average US Salary</p>
+            <small>$86k to $157K</small>
+          </div>
+        </div>
+
+        <div class="mt-5 course_price">
+          <h3>$1499</h3>
+          <small>As low as $136/mo with Affirm, great Opportunity</small>
+          <br />
+          <br />
+          <button class="enroll_now">Enroll Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-5 pb-5 program_details">
+      <div class="container course_info">
+        <h1>About the Program</h1>
+        <div class="row about_program">
+          <!--First column-->
+          <div class="col-md-3 mx-auto shfooter-1">
+            <div class="title-1" data-target="#tab1" data-toggle="collapse">
+              <div class="mt-3 font-weight-bold">
+                About the Data Scientist Master's program developed in
+                collaboration with IBM
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="question_details" id="tab1">
+              <p>
+                IBM is recognized as a Leader in the 2021 Magic Quadrant for
+                Data Science and Machine Learning. A joint partnership with
+                Simplilearn and IBM introduces students to integrated blended
+                learning, making them experts in Artificial Intelligence and
+                Data Science. This Data Science program in collaboration with
+                IBM will make students industry-ready for Artificial
+                Intelligence and Data Science job roles.
+              </p>
+              <br /><br />
+              <p>
+                IBM is a leading cognitive solutions and cloud platform company,
+                headquartered in Armonk, New York, offering a plethora of
+                technology and consulting services. Each year, IBM invests $6
+                billion in research and development and has achieved five Nobel
+                prizes, nine US National Medals of Technology, five US National
+                Medals of Science, six Turing Awards, and 10 Inductions in the
+                US Inventors Hall of Fame.
+              </p>
+              <br />
+              <b
+                >What can I expect from these Data Science courses developed in
+                collaboration with IBM?</b
+              >
+              <br />
+              <p>
+                Upon completion of this Data Scientist online training, you will
+                receive the certificates from IBM (for IBM Data Science courses)
+                and Simplilearn for the courses in the learning path. These
+                certificates will testify to your skills as an expert in Data
+                Science. You will also receive the following:
+              </p>
+              <ul>
+                <li>Masterclass by IBM experts</li>
+                <li>Ask me anything sessions with IBM leadership</li>
+                <li>Hackathons conducted by IBM</li>
+                <li>
+                  Industry-recognized Data Scientist Master's certificate from
+                  Simplilearn
+                </li>
+              </ul>
+            </div>
+            <!-- <ul class="list-unstyled collapse" id="tab1">
+           <h1>ffffffffffffffffffffffffff</h1>
+          </ul> -->
+          </div>
+
+          <!--/.First column-->
+          <hr class="clearfix w-100 mb-0" />
+          <!--Second column-->
+          <div class="col-md-3 mx-auto shfooter-1">
+            <div class="title-1" data-target="#tab2" data-toggle="collapse">
+              <div class="mt-3 font-weight-bold">
+                What are the learning objectives?
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="collapse question_details" id="tab2">
+              <p>
+                IBM is recognized as a Leader in the 2021 Magic Quadrant for
+                Data Science and Machine Learning. A joint partnership with
+                Simplilearn and IBM introduces students to integrated blended
+                learning, making them experts in Artificial Intelligence and
+                Data Science. This Data Science program in collaboration with
+                IBM will make students industry-ready for Artificial
+                Intelligence and Data Science job roles.
+              </p>
+              <br /><br />
+              <p>
+                IBM is a leading cognitive solutions and cloud platform company,
+                headquartered in Armonk, New York, offering a plethora of
+                technology and consulting services. Each year, IBM invests $6
+                billion in research and development and has achieved five Nobel
+                prizes, nine US National Medals of Technology, five US National
+                Medals of Science, six Turing Awards, and 10 Inductions in the
+                US Inventors Hall of Fame.
+              </p>
+              <br />
+              <b
+                >What can I expect from these Data Science courses developed in
+                collaboration with IBM?</b
+              >
+              <br />
+              <p>
+                Upon completion of this Data Scientist online training, you will
+                receive the certificates from IBM (for IBM Data Science courses)
+                and Simplilearn for the courses in the learning path. These
+                certificates will testify to your skills as an expert in Data
+                Science. You will also receive the following:
+              </p>
+              <ul>
+                <li>Masterclass by IBM experts</li>
+                <li>Ask me anything sessions with IBM leadership</li>
+                <li>Hackathons conducted by IBM</li>
+                <li>
+                  Industry-recognized Data Scientist Master's certificate from
+                  Simplilearn
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--/.Second column-->
+          <hr class="clearfix w-100 mb-0" />
+          <!--Third column-->
+          <div class="col-md-3 mx-auto shfooter-1">
+            <div class="title-1" data-target="#tab3" data-toggle="collapse">
+              <div class="mt-3 font-weight-bold">
+                Why be a Data Scientist?
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="collapse question_details" id="tab3">
+              <p>
+                IBM is recognized as a Leader in the 2021 Magic Quadrant for
+                Data Science and Machine Learning. A joint partnership with
+                Simplilearn and IBM introduces students to integrated blended
+                learning, making them experts in Artificial Intelligence and
+                Data Science. This Data Science program in collaboration with
+                IBM will make students industry-ready for Artificial
+                Intelligence and Data Science job roles.
+              </p>
+              <br /><br />
+              <p>
+                IBM is a leading cognitive solutions and cloud platform company,
+                headquartered in Armonk, New York, offering a plethora of
+                technology and consulting services. Each year, IBM invests $6
+                billion in research and development and has achieved five Nobel
+                prizes, nine US National Medals of Technology, five US National
+                Medals of Science, six Turing Awards, and 10 Inductions in the
+                US Inventors Hall of Fame.
+              </p>
+              <br />
+              <b
+                >What can I expect from these Data Science courses developed in
+                collaboration with IBM?</b
+              >
+              <br />
+              <p>
+                Upon completion of this Data Scientist online training, you will
+                receive the certificates from IBM (for IBM Data Science courses)
+                and Simplilearn for the courses in the learning path. These
+                certificates will testify to your skills as an expert in Data
+                Science. You will also receive the following:
+              </p>
+              <ul>
+                <li>Masterclass by IBM experts</li>
+                <li>Ask me anything sessions with IBM leadership</li>
+                <li>Hackathons conducted by IBM</li>
+                <li>
+                  Industry-recognized Data Scientist Master's certificate from
+                  Simplilearn
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--/.Third column-->
+          <hr class="clearfix w-100 mb-0" />
+          <!--Fourth column-->
+          <div class="col-md-3 mx-auto shfooter-1">
+            <div class="title-1" data-target="#tab4" data-toggle="collapse">
+              <div class="mt-3 font-weight-bold">
+                What important Data Science skills you will learn with this
+                Master’s program?
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="collapse question_details" id="tab4">
+              <p>
+                IBM is recognized as a Leader in the 2021 Magic Quadrant for
+                Data Science and Machine Learning. A joint partnership with
+                Simplilearn and IBM introduces students to integrated blended
+                learning, making them experts in Artificial Intelligence and
+                Data Science. This Data Science program in collaboration with
+                IBM will make students industry-ready for Artificial
+                Intelligence and Data Science job roles.
+              </p>
+              <br /><br />
+              <p>
+                IBM is a leading cognitive solutions and cloud platform company,
+                headquartered in Armonk, New York, offering a plethora of
+                technology and consulting services. Each year, IBM invests $6
+                billion in research and development and has achieved five Nobel
+                prizes, nine US National Medals of Technology, five US National
+                Medals of Science, six Turing Awards, and 10 Inductions in the
+                US Inventors Hall of Fame.
+              </p>
+              <br />
+              <b
+                >What can I expect from these Data Science courses developed in
+                collaboration with IBM?</b
+              >
+              <br />
+              <p>
+                Upon completion of this Data Scientist online training, you will
+                receive the certificates from IBM (for IBM Data Science courses)
+                and Simplilearn for the courses in the learning path. These
+                certificates will testify to your skills as an expert in Data
+                Science. You will also receive the following:
+              </p>
+              <ul>
+                <li>Masterclass by IBM experts</li>
+                <li>Ask me anything sessions with IBM leadership</li>
+                <li>Hackathons conducted by IBM</li>
+                <li>
+                  Industry-recognized Data Scientist Master's certificate from
+                  Simplilearn
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--/.Fourth column-->
+          <hr class="clearfix w-100 mb-0" />
+          <!--fifth column-->
+          <div class="col-md-3 mx-auto shfooter-1">
+            <div class="title-1" data-target="#tab5" data-toggle="collapse">
+              <div class="mt-3 font-weight-bold">
+                Who should take this Data Scientist Master’s program?
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="collapse question_details" id="tab5">
+              <p>
+                IBM is recognized as a Leader in the 2021 Magic Quadrant for
+                Data Science and Machine Learning. A joint partnership with
+                Simplilearn and IBM introduces students to integrated blended
+                learning, making them experts in Artificial Intelligence and
+                Data Science. This Data Science program in collaboration with
+                IBM will make students industry-ready for Artificial
+                Intelligence and Data Science job roles.
+              </p>
+              <br /><br />
+              <p>
+                IBM is a leading cognitive solutions and cloud platform company,
+                headquartered in Armonk, New York, offering a plethora of
+                technology and consulting services. Each year, IBM invests $6
+                billion in research and development and has achieved five Nobel
+                prizes, nine US National Medals of Technology, five US National
+                Medals of Science, six Turing Awards, and 10 Inductions in the
+                US Inventors Hall of Fame.
+              </p>
+              <br />
+              <b
+                >What can I expect from these Data Science courses developed in
+                collaboration with IBM?</b
+              >
+              <br />
+              <p>
+                Upon completion of this Data Scientist online training, you will
+                receive the certificates from IBM (for IBM Data Science courses)
+                and Simplilearn for the courses in the learning path. These
+                certificates will testify to your skills as an expert in Data
+                Science. You will also receive the following:
+              </p>
+              <ul>
+                <li>Masterclass by IBM experts</li>
+                <li>Ask me anything sessions with IBM leadership</li>
+                <li>Hackathons conducted by IBM</li>
+                <li>
+                  Industry-recognized Data Scientist Master's certificate from
+                  Simplilearn
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--/.fifth column-->
+          <hr class="clearfix w-100 mb-0" />
+          <!--sixth column-->
+          <div class="col-md-3 mx-auto shfooter-1">
+            <div class="title-1" data-target="#tab6" data-toggle="collapse">
+              <div class="mt-3 font-weight-bold">
+                What are the prerequisites for this Data Science certification
+                training?
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="collapse question_details" id="tab6">
+              <p>
+                IBM is recognized as a Leader in the 2021 Magic Quadrant for
+                Data Science and Machine Learning. A joint partnership with
+                Simplilearn and IBM introduces students to integrated blended
+                learning, making them experts in Artificial Intelligence and
+                Data Science. This Data Science program in collaboration with
+                IBM will make students industry-ready for Artificial
+                Intelligence and Data Science job roles.
+              </p>
+              <br /><br />
+              <p>
+                IBM is a leading cognitive solutions and cloud platform company,
+                headquartered in Armonk, New York, offering a plethora of
+                technology and consulting services. Each year, IBM invests $6
+                billion in research and development and has achieved five Nobel
+                prizes, nine US National Medals of Technology, five US National
+                Medals of Science, six Turing Awards, and 10 Inductions in the
+                US Inventors Hall of Fame.
+              </p>
+              <br />
+              <b
+                >What can I expect from these Data Science courses developed in
+                collaboration with IBM?</b
+              >
+              <br />
+              <p>
+                Upon completion of this Data Scientist online training, you will
+                receive the certificates from IBM (for IBM Data Science courses)
+                and Simplilearn for the courses in the learning path. These
+                certificates will testify to your skills <as></as> an expert in Data
+                Science. You will also receive the following:
+              </p>
+              <ul>
+                <li>Masterclass by IBM experts</li>
+                <li>Ask me anything sessions with IBM leadership</li>
+                <li>Hackathons conducted by IBM</li>
+                <li>
+                  Industry-recognized Data Scientist Master's certificate from
+                  Simplilearn
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--/.sixth column-->
+          <hr class="clearfix w-100 mb-0" />
+          <!--seventh column-->
+          <div class="col-md-3 mx-auto shfooter-1">
+            <div class="title-1" data-target="#tab7" data-toggle="collapse">
+              <div style="padding-bottom: 17px" class="mt-3 font-weight-bold">
+                What type of jobs will I be suited for after completing this
+                Data Science course?
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="collapse question_details" id="tab7">
+              <p>
+                IBM is recognized as a Leader in the 2021 Magic Quadrant for
+                Data Science and Machine Learning. A joint partnership with
+                Simplilearn and IBM introduces students to integrated blended
+                learning, making them experts in Artificial Intelligence and
+                Data Science. This Data Science program in collaboration with
+                IBM will make students industry-ready for Artificial
+                Intelligence and Data Science job roles.
+              </p>
+              <br /><br />
+              <p>
+                IBM is a leading cognitive solutions and cloud platform company,
+                headquartered in Armonk, New York, offering a plethora of
+                technology and consulting services. Each year, IBM invests $6
+                billion in research and development and has achieved five Nobel
+                prizes, nine US National Medals of Technology, five US National
+                Medals of Science, six Turing Awards, and 10 Inductions in the
+                US Inventors Hall of Fame.
+              </p>
+              <br />
+              <b
+                >What can I expect from these Data Science courses developed in
+                collaboration with IBM?</b
+              >
+              <br />
+              <p>
+                Upon completion of this Data Scientist online training, you will
+                receive the certificates from IBM (for IBM Data Science courses)
+                and Simplilearn for the courses in the learning path. These
+                certificates will testify to your skills as an expert in Data
+                Science. You will also receive the following:
+              </p>
+              <ul>
+                <li>Masterclass by IBM experts</li>
+                <li>Ask me anything sessions with IBM leadership</li>
+                <li>Hackathons conducted by IBM</li>
+                <li>
+                  Industry-recognized Data Scientist Master's certificate from
+                  Simplilearn
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--/.seventh column-->
+        </div>
+        <div class="mt-5 pt-5">
+          <h3><b>Tools</b> Covered</h3>
+          <div class="tools_learn pt-5 pb-5">
+            <div class="row">
+              <div class="col-md-2 col-sm-3 mb-5">
+                <img
+                  src="https://www.simplilearn.com/ice9/tools_covered/flume.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-2 col-sm-3 mb-5">
+                <img
+                  src="https://www.simplilearn.com/ice9/tools_covered/Numpy-Logo.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-2 col-sm-3 mb-5">
+                <img
+                  src="https://www.simplilearn.com/ice9/tools_covered/Pandas_logo.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-2 col-sm-3 mb-5">
+                <img
+                  src="https://www.simplilearn.com/ice9/tools_covered/Apache-Spark-Logo.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-2 col-sm-3 mb-5">
+                <img
+                  src="https://www.simplilearn.com/ice9/tools_covered/hbase_logo.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-2 col-sm-3 mb-5">
+                <img
+                  src="https://www.simplilearn.com/ice9/tools_covered/hive.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-2 col-sm-3 mb-5">
+                <img
+                  src="https://www.simplilearn.com/ice9/tools_covered/pig.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-2 col-sm-3 mb-5">
+                <img
+                  src="https://www.simplilearn.com/ice9/tools_covered/hdfs.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-2 col-sm-3 mb-5">
+                <img
+                  src="https://www.simplilearn.com/ice9/tools_covered/Python-Logo.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-2 col-sm-3 mb-5">
+                <img
+                  src="https://www.simplilearn.com/ice9/tools_covered/R-Logo.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-2 col-sm-3 mb-5">
+                <img
+                  src="https://www.simplilearn.com/ice9/tools_covered/Scala-Logo.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-2 col-sm-3 mb-5">
+                <img
+                  src="	https://www.simplilearn.com/ice9/tools_covered/Numpy-Logo.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </section>
+
+
+    <section style="background-color: antiquewhite;" class="section pt-5 pb-5">
+      <div class="container course_instructor">
+        <h3 style="text-align: center;">Program <b>Advisor</b></h3>
+        <div class="instructor_info ">
+          <img src="https://www.simplilearn.com/ice9/program_directors/ronald-van-loon_v3.jpeg" alt="">
+          <h4>Ronald van Loon</h4>
+          <h6>Top 10 Big Data and Data Science Influencer, Director - Adversitement</h6>
+          <p>Named by Onalytica as one of the three most influential people in Big Data, Ronald is also an author of a number of leading Big Data and Data Science websites, including Datafloq, Data Science Central, and The Guardian. He also regularly speaks at renowned events.</p>
+          <div class="mt-3 pb-4">
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container pt-5 pb-5">
+        <h1 style="text-align: center; margin-bottom:50px;">Learning Path</h1>
+        <div class="row about_program_1 pt-5 pb-5 ">
+          <div class="p-3">
+            <h3>Data Science with Python</h3>
+            <p>The Data Science with Python certification course provides a complete overview of Python's Data Analytics tools and techniques. Learning Python is a crucial skill for many Data Science roles. Acquiring knowledge in Python will be the key to unlock your career as a Data Scientist.</p>
+          </div>
+          <!--First column-->
+          <div class="col-md-12 mx-auto shfooter-1 content_design_root ">
+            <div class="title-1" data-target="#tab11" data-toggle="collapse">
+              <div class="mt-2 font-weight-bold">
+               Course Content
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class=" collapse question_details " id="tab11">
+              <div class="col-md-12 mx-auto shfooter-2 content_design">
+                <div class="title-1 " data-target="#tab12" data-toggle="collapse">
+                  <div class="mt-3 font-weight-bold  ">
+                   Data Science With Python
+                    <div class="float-right navbar-toggler">
+                      <i class="fas fa-plus-square"></i>
+                      <i class="fas fa-minus"></i>
+                      <!-- <i class="fas fa-angle-down"></i>
+                      <i class="fas fa-angle-up"></i> -->
+                    </div>
+                  </div>
+                </div>
+                <div class=" collapse question_details" id="tab12">
+
+                  <!-- module 1  -->
+                  <div class="col-md-12 mx-auto shfooter-2 content_design_child">
+                    <div class="title-1" data-target="#tab_module1" data-toggle="collapse">
+                      <div class="mt-3 font-weight-bold">
+                        Introduction to Data Science
+                        <div class="float-right navbar-toggler">
+                          <i class="fas fa-plus-square"></i>
+                          <i class="fas fa-minus"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" collapse question_details " id="tab_module1">
+                        <ul class="level_3">
+                          <li>
+                            <p>1.1: Introduction to Data Science</p>
+                          </li>
+                          <li>
+                            <p>1.2:  Different Sectors Using Data Science</p>
+                          </li>
+                          <li>
+                            <p>1.3: Purpose and Components of Python</p>
+                          </li>
+                          <li>
+                            <p>1.4: Quiz</p>
+                          </li>
+                          <li>
+                            <p>1.5: Key Takeaways</p>
+                          </li>
+                        </ul>       
+                    </div>
+                  </div>
+                  <!-- module 1 -->
+
+
+                  <!-- module 2 -->
+                  <div class="col-md-12 mx-auto shfooter-2 content_design_child">
+                    <div class="title-1" data-target="#tab_module2" data-toggle="collapse">
+                      <div class="mt-3 font-weight-bold">
+                        Stattistics Essential for Data Science
+                        <div class="float-right navbar-toggler">
+                          <i class="fas fa-plus-square"></i>
+                          <i class="fas fa-minus"></i>
+                          <!-- <i class="fas fa-angle-down"></i>
+                          <i class="fas fa-angle-up"></i> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" collapse question_details" id="tab_module2">
+                      <h1>Stattistics Essential for Data Science</h1>
+                    </div>
+                  </div>
+                  <!-- module 2 -->
+
+
+                  <!-- module 3 -->
+                  <div class="col-md-12 mx-auto shfooter-2 content_design_child">
+                    <div class="title-1" data-target="#tab_module3" data-toggle="collapse">
+                      <div class="mt-3 font-weight-bold">
+                        Stattistics Essential for Data Science
+                        <div class="float-right navbar-toggler">
+                          <i class="fas fa-plus-square"></i>
+                          <i class="fas fa-minus"></i>
+                          <!-- <i class="fas fa-angle-down"></i>
+                          <i class="fas fa-angle-up"></i> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" collapse question_details" id="tab_module3">
+                      <h1>Stattistics Essential for Data Science</h1>
+                    </div>
+                  </div>
+                  <!-- module 3 -->
+
+
+                  <!-- module 4 -->
+                  <div class="col-md-12 mx-auto shfooter-2 content_design_child">
+                    <div class="title-1" data-target="#tab_module4" data-toggle="collapse">
+                      <div class="mt-3 font-weight-bold">
+                        Stattistics Essential for Data Science
+                        <div class="float-right navbar-toggler">
+                          <i class="fas fa-plus-square"></i>
+                          <i class="fas fa-minus"></i>
+                          <!-- <i class="fas fa-angle-down"></i>
+                          <i class="fas fa-angle-up"></i> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" collapse question_details" id="tab_module4">
+                      <h1>Stattistics Essential for Data Science</h1>
+                    </div>
+                  </div>
+                  <!-- module 4 -->
+
+
+                  <!-- module 5 -->
+                  <div class="col-md-12 mx-auto shfooter-2 content_design_child">
+                    <div class="title-1" data-target="#tab_module5" data-toggle="collapse">
+                      <div class="mt-3 font-weight-bold">
+                        Stattistics Essential for Data Science
+                        <div class="float-right navbar-toggler">
+                          <i class="fas fa-plus-square"></i>
+                          <i class="fas fa-minus"></i>
+                          <!-- <i class="fas fa-angle-down"></i>
+                          <i class="fas fa-angle-up"></i> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" collapse question_details" id="tab_module5">
+                      <h1>Stattistics Essential for Data Science</h1>
+                    </div>
+                  </div>
+                  <!-- module 5 -->
+
+
+                  <!-- module 6 -->
+                  <div class="col-md-12 mx-auto shfooter-2 content_design_child">
+                    <div class="title-1" data-target="#tab_module6" data-toggle="collapse">
+                      <div class="mt-3 font-weight-bold">
+                        Stattistics Essential for Data Science
+                        <div class="float-right navbar-toggler">
+                          <i class="fas fa-plus-square"></i>
+                          <i class="fas fa-minus"></i>
+                          <!-- <i class="fas fa-angle-down"></i>
+                          <i class="fas fa-angle-up"></i> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" collapse question_details" id="tab_module6">
+                      <h1>Stattistics Essential for Data Science</h1>
+                    </div>
+                  </div>
+                  <!-- module 6 -->
+
+
+                  <!-- module 7 -->
+                  <div class="col-md-12 mx-auto shfooter-2 content_design_child">
+                    <div class="title-1" data-target="#tab_module7" data-toggle="collapse">
+                      <div class="mt-3 font-weight-bold">
+                        Stattistics Essential for Data Science
+                        <div class="float-right navbar-toggler">
+                          <i class="fas fa-plus-square"></i>
+                          <i class="fas fa-minus"></i>
+                          <!-- <i class="fas fa-angle-down"></i>
+                          <i class="fas fa-angle-up"></i> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" collapse question_details" id="tab_module7">
+                      <h1>Stattistics Essential for Data Science</h1>
+                    </div>
+                  </div>
+                  <!-- module 7 -->
+
+
+                  <!-- module 8 -->
+                  <div class="col-md-12 mx-auto shfooter-2 content_design_child">
+                    <div class="title-1" data-target="#tab_module8" data-toggle="collapse">
+                      <div class="mt-3 font-weight-bold">
+                        Stattistics Essential for Data Science
+                        <div class="float-right navbar-toggler">
+                          <i class="fas fa-plus-square"></i>
+                          <i class="fas fa-minus"></i>
+                          <!-- <i class="fas fa-angle-down"></i>
+                          <i class="fas fa-angle-up"></i> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" collapse question_details" id="tab_module8">
+                      <h1>Stattistics Essential for Data Science</h1>
+                    </div>
+                  </div>
+                  <!-- module 8 -->
+                  
+                </div>
+              </div>
+              <div class="col-md-12 mx-auto shfooter-2 content_design">
+                <div class="title-1" data-target="#tab13" data-toggle="collapse">
+                  <div class="mt-3 font-weight-bold">
+                   Math Refresher
+                    <div class="float-right navbar-toggler">
+                      <i class="fas fa-plus-square"></i>
+                      <i class="fas fa-minus"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class=" collapse question_details" id="tab13">
+                  <h1>Stattistics Essential for Data Science</h1>
+                </div>
+              </div>
+              <div class="col-md-12 mx-auto shfooter-2 content_design">
+                <div class="title-1" data-target="#tab14" data-toggle="collapse">
+                  <div class="mt-3 font-weight-bold">
+                    Stattistics Essential for Data Science
+                    <div class="float-right navbar-toggler">
+                      <i class="fas fa-plus-square"></i>
+                      <i class="fas fa-minus"></i>
+                      <!-- <i class="fas fa-angle-down"></i>
+                      <i class="fas fa-angle-up"></i> -->
+                    </div>
+                  </div>
+                </div>
+                <div class=" collapse question_details" id="tab14">
+                  <h1>Stattistics Essential for Data Science</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/.First column-->
+          <hr class="clearfix w-100 mb-0" />
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section certificate">
+      <div class="container pt-5 pb-5 ">
+          <h1>Get Ahead with Softanbees Master Certificate</h1>
+          <div class="row mt-5">
+            <div class="col-md-6">
+              <h6><b>Earn your Data Scientist certificate</b></h6>
+              <p>Our Data Scientist Master's program is exhaustive and this certificate is proof that you have taken a big leap in mastering the domain.</p>
+              <br>
+              <h6><b>Differentiate yourself with a Masters Certificate</b></h6>
+              <p>The knowledge and Data Science skills you've gained working on projects, simulations, case studies will set you ahead of the competition.</p>
+              <br>
+              <h6><b>Share your achievement</b></h6>
+              <p>Talk about your Data Science certification on LinkedIn, Twitter, Facebook, boost your resume, or frame it - tell your friends and colleagues about it.</p>
+
+            </div>
+            <div class="col-md-6">
+             <img src="https://www.simplilearn.com/ice9/master_certificates/Data-Scientist-.jpg" alt="">
+             <br>
+             <label for="">Indrustrial Certificate</label>
+            </div>
+          </div>
+      </div>
+
+    </section>
+
+
+<section class="section course_reviews">
+  <div class="container pt-5 pb-5">
+    <h1>Data Scientist <b>Reviews</b></h1>
+
+    <div class="gtco-testimonials">
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div>
+          <div class="card text-center">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="">
+            <div class="card-body">
+              <div class="top_content_reviews">
+                <h5>Ronne Galle <br />
+                <span> Sr. Business Data Analyst and Lead</span></h5>
+                <div class="ratting_icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <p class="card-text">“ The material is exciting and structured. The animation in the lectures is very helpful and useful. The lecture notes are also outstanding. The way of explaining things is also great. The instructor is just excellent in everything. I highly recommend people take Data Science courses from Simplilearn.” </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="">
+            <div class="card-body">
+              <div class="top_content_reviews">
+              <h5>Missy Limana<br />
+                <span> Engineer </span></h5>
+                <div class="ratting_icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+               
+                </div>
+              <p class="card-text">“Simplilearn is the best online platform. I have completed Data Scientist certification from here. The trainers are very knowledgeable. It has a well-organized course. The method of presentation is really commendable. Kudos to Simplilearn. It's definitely going to be a long journey for Simplilearn.” </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302" alt="">
+            <div class="card-body">
+              <div class="top_content_reviews">
+              <h5>Martha Brown<br />
+                <span> Project Manager </span></h5>
+                <div class="ratting_icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                </div>
+              <p class="card-text">“ Simplilearn is a gateway for people who want to enter into the fields of Data Science, AI or Cloud. I found this is to be one of the best online instructor-led portals, and I would definitely recommend it. After the certification, I was able to change my job role from a Hadoop Developer to a Big Data Engineer with a good salary hike. ” </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt="">
+            <div class="card-body">
+              <div class="top_content_reviews">
+              <h5>Hanna Lisem<br />
+                <span> Project Manager </span></h5>
+                <div class="ratting_icon">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                </div>
+              <p class="card-text">“The material is exciting and structured. The animation in the lectures is very helpful and useful. The lecture notes are also outstanding. The way of explaining things is also great. The instructor is just excellent in everything. I highly recommend people take Data Science courses from Simplilearn. ” </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section online_bootcamp">
+  <div class="container pt-5 pb-5">
+    <h1>Why Online Bootcamp</h1>
+    <div class="row">
+      <div class="col-md-6 bootcamp_left">
+        <video  controls>
+          <source src="asset/v.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-md-6 bootcamp_left">
+        <div class="row ">
+          <div class="col-md-6 pb-3">
+            <p>Develop skills for real career growth</p>
+            <p class="para_bootcamp">Cutting-edge curriculum designed in guidance with industry and academia to develop job-ready skills</p>
+          </div>
+          <div class="col-md-6 pb-3">
+            <p>Learn by working on real-world problems</p>
+            <p class="para_bootcamp">Capstone projects involving real world data sets with virtual labs for hands-on learning</p>
+          </div>
+          <div class="col-md-6 pb-3">
+            <p>Learn from experts active in their field, not out-of-touch trainers</p>
+            <p class="para_bootcamp">Leading practitioners who bring current best practices and case studies to sessions that fit into your work schedule.</p>
+          </div>
+          <div class="col-md-6 pb-3">
+            <p>Structured guidance ensuring learning never stops</p>
+            <p class="para_bootcamp">24x7 Learning support from mentors and a community of like-minded peers to resolve any conceptual doubts</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section faqs">
+  <div class="container pt-5 pb-5">
+      <h1>FAQs</h1>
+      <div class="disp-cont">
+        <div class="row about_program_3">
+          <!--First column-->
+          <div class="col-md-12 mx-auto shfooter-1 ">
+            <div class="title-1" data-target="#faqs1" data-toggle="collapse">
+              <div class="mt-3 font-weight-bold">
+                What is Data Science?
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class=" collapse question_details" id="faqs1">   
+              Data science is a broad field that involves dealing with large volumes of data to uncover hidden trends and patterns and extract valuable information that aids in better decision-making. As companies are collecting massive amounts of data, they use various data science tools and techniques to build predictive models. Simplilearn’s data science training can help you learn all of its concepts from scratch.
+            </div>
+          </div>
+          <!--/.First column-->
+          <hr class="clearfix w-100 mb-0" />
+
+
+          <!--Second column-->
+          <div class="col-md-12 mx-auto shfooter-1">
+            <div class="title-1" data-target="#faqs2" data-toggle="collapse">
+              <div class="mt-3 font-weight-bold">
+                What is Data Scienc course??
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="collapse question_details" id="faqs2">
+              Data Science is a broad field, and you need to learn about so many concepts if you are a beginner. A Data Science course is a training program of around six to twelve months, often taken by industry experts to help candidates build a strong foundation in the field. Apart from the theoretical material, our online Data Science certification course includes virtual labs, industry projects, interactive quizzes, and practice tests, giving you an enhanced learning experience.
+            </div>
+          </div>
+          <!--/.Second column-->
+          <hr class="clearfix w-100 mb-0" />
+          <!--Third column-->
+          <div class="col-md-12 mx-auto shfooter-1">
+            <div class="title-1" data-target="#faqs3" data-toggle="collapse">
+              <div class="mt-3 font-weight-bold">
+               Who is Data Scientist?
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="collapse question_details" id="faqs3">
+              A Data Scientist is an individual who gathers, cleans, analyzes, and visualizes large datasets to draw meaningful conclusions and communicate them to the business leaders. The data is collected from various sources, processed into a format suitable for analysis, and fed into an analytics system where a statistical analysis is performed to gain actionable insights.
+            </div>
+          </div>
+          <!--/.Third column-->
+          <hr class="clearfix w-100 mb-0" />
+        </div>
+      </div>
+
+      <div class="more-cont" style="display:none;">
+        <div class="row about_program_3">
+          <!--First column-->
+          <div class="col-md-12 mx-auto shfooter-1 ">
+            <div class="title-1" data-target="#faqs4" data-toggle="collapse">
+              <div class="mt-3 font-weight-bold">
+                Who are the instructors and how are they selected?
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="collapse question_details" id="faqs4">
+              All of our highly qualified Data Science trainers are industry experts with years of relevant industry experience. Each of them has gone through a rigorous selection process that includes profile screening, technical evaluation, and a training demo before they are certified to train for us. We also ensure that only those trainers with a high alumni rating remain on our faculty.
+            </div>
+          
+          </div>
+
+          <!--/.First column-->
+          <hr class="clearfix w-100 mb-0" />
+          <!--Second column-->
+          <div class="col-md-12 mx-auto shfooter-1">
+            <div class="title-1" data-target="#faqs5" data-toggle="collapse">
+              <div class="mt-3 font-weight-bold">
+                What is Global teaching assistance?
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="collapse question_details" id="faqs5">
+              Our teaching assistants are a dedicated team of subject matter experts to help you get certified in Data Science on your first attempt. They engage students proactively to ensure the course path is being followed and help you enrich your learning experience, from class onboarding to project mentoring and job assistance. Teaching Assistance is available during business hours.
+            </div>
+          </div>
+          <!--/.Second column-->
+          <hr class="clearfix w-100 mb-0" />
+          <!--Third column-->
+          <div class="col-md-12 mx-auto shfooter-1">
+            <div class="title-1" data-target="#faqs6" data-toggle="collapse">
+              <div class="mt-3 font-weight-bold">
+                  What is covered under the 24/7 Support promise?
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <div class="collapse question_details" id="faqs6">        
+                We offer 24/7 support through email, chat, and calls. We also have a dedicated team that provides on-demand assistance through our community forum. What’s more, you will have lifetime access to the community forum, even after completion of your Data Science course with us.
+            </div>
+          </div>
+          <!--/.Third column-->
+          <hr class="clearfix w-100 mb-0" />
+        </div>
+      </div>
+      <p class="more">show more</p>
+     
+  </div>
+</section>
+
+
+<section class="section related_prog">
+  <div class="container pt-5 pb-5">
+    <h1>Related Programs</h1>
+    <div class="items-course">
+             
+      <div class="item-course">
+          <div class="card" style="width: 20rem; height: 30rem;">
+              <img style="height: 200px !important;" class="card-img-top" src="asset/data-science-with-r.jpg" alt="Card image cap" />
+              <div class="card-body recomonded-card">
+                  <h5>Practical Data Science with R</h5>
+                  <p class="card-text">
+                      R provides objects model and visualize data. 
+                      R is used for data analysis. and statistical modeling. 
+                      R is an environment for statistical analysis.
+                  </p>
+                  <a href="" data-target="#exampleModal" data-toggle="modal">Download Catalog</a>
+              </div>
+          </div>
+      </div>
+      <div class="item-course">
+          <div class="card" style="width: 20rem; height: 30rem;">
+          <img style="height: 200px !important;"
+              class="card-img-top"
+              src="asset/data science-1.jpg"
+              alt="Card image cap"
+          />
+              <div class="card-body recomonded-card">
+                      <h5>Industrial Data Science with Python</h5>
+                      <p class="card-text">
+                          For data scientists,need to incorporate statistical code into production databases or integrate data with web-based applications,
+                          Python is often the ideal choice. 
+                      </p>
+                      <a href="" data-target="#exampleModal" data-toggle="modal">Download Catalog</a>
+              </div>
+          </div>
+      </div>
+      <div class="item-course">
+        <div class="card" style="width: 20rem; height: 30rem;">
+            <img style="height: 200px !important;" class="card-img-top" src="asset/data-analyst.png" alt="Card image cap" />
+            <div class="card-body recomonded-card">
+                <h5> Data Analyst</h5>
+                <p class="card-text">
+                    Data Analysis become one of the most high-in-demand jobs around the world. As a result,
+                    Data Analyst salary in India is significantly higher than other software related professionals
+                </p>
+                <a href="" data-target="#exampleModal" data-toggle="modal">Download Catalog</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer id="footer" class="footer text-dark d-flex-column text-center">
+      <hr class="mt-0" />
+      <!--Social buttons-->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          target="_blank"
+          class="btn btn-outline-dark btn-floating m-1"
+          href="https://www.facebook.com/softanbees"
+          role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <!-- Instagram -->
+        <a
+          target="_blank"
+          class="btn btn-outline-dark btn-floating m-1"
+          href="https://www.instagram.com/softanbees/"
+          role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+
+        <!-- Linkedin -->
+        <a
+          target="_blank"
+          class="btn btn-outline-dark btn-floating m-1"
+          href="https://www.linkedin.com/company/softanbees-technologies/"
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-dark mb-4">
+                <input
+                  type="email"
+                  id="form5Example2"
+                  class="form-control"
+                  placeholder="Enter Your Email Here"
+                />
+                <!-- <label class="form-label" for="form5Example2">Email address</label> -->
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="button-style mb-4 newsletter_btn">
+                Subscribe <i class="fas fa-mail-bulk"> </i>
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p class="p-4">
+          Softanbees Technologies Private Limited, an analytics company provides
+          state-of-the-art data-driven analytics solutions to different
+          conglomerates. We are here to share our corporate curated experience
+          to create a sustainable data infrastructure
+        </p>
+      </section>
+      <!-- Section: Text -->
+      <!--/.Social buttons-->
+      <hr class="mb-0" />
+      <!--Footer Links-->
+      <div class="container text-left text-md-center">
+        <div class="row">
+          <!--First column-->
+          <div class="col-md-3 mx-auto shfooter">
+            <h5 class="my-2 font-weight-bold d-none d-md-block">Product</h5>
+            <div
+              class="d-md-none title"
+              data-target="#Product"
+              data-toggle="collapse"
+            >
+              <div class="mt-3 font-weight-bold">
+                Product
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <ul class="list-unstyled collapse" id="Product">
+              <li><a href="">Create Websites</a></li>
+              <li><a href="">Secure Cloud Hosting</a></li>
+              <li><a href="">Engage Your Audience</a></li>
+              <li><a href="">Website Support</a></li>
+            </ul>
+          </div>
+          <!--/.First column-->
+          <hr class="clearfix w-100 d-md-none mb-0" />
+          <!--Second column-->
+          <div class="col-md-3 mx-auto shfooter">
+            <h5 class="my-2 font-weight-bold d-none d-md-block">Company</h5>
+            <div
+              class="d-md-none title"
+              data-target="#Company"
+              data-toggle="collapse"
+            >
+              <div class="mt-3 font-weight-bold">
+                Company
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <ul class="list-unstyled collapse" id="Company">
+              <li><a href="">About</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Support</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">FAQ</a></li>
+            </ul>
+          </div>
+          <!--/.Second column-->
+          <hr class="clearfix w-100 d-md-none mb-0" />
+          <!--Third column-->
+          <div class="col-md-3 mx-auto shfooter">
+            <h5 class="my-2 font-weight-bold d-none d-md-block">Resources</h5>
+            <div
+              class="d-md-none title"
+              data-target="#Resources"
+              data-toggle="collapse"
+            >
+              <div class="mt-3 font-weight-bold">
+                Resources
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <ul class="list-unstyled collapse" id="Resources">
+              <li><a href="">Blog</a></li>
+              <li><a href="">eBooks</a></li>
+              <li><a href="">Whitepapers</a></li>
+              <li><a href="">Comparison Guide</a></li>
+              <li><a href="">Website Grader</a></li>
+            </ul>
+          </div>
+          <!--/.Third column-->
+          <hr class="clearfix w-100 d-md-none mb-0" />
+          <!--Fourth column-->
+          <div class="col-md-3 mx-auto shfooter">
+            <h5 class="my-2 font-weight-bold d-none d-md-block">Get Help</h5>
+            <div
+              class="d-md-none title"
+              data-target="#Get-Help"
+              data-toggle="collapse"
+            >
+              <div class="mt-3 font-weight-bold">
+                Get Help
+                <div class="float-right navbar-toggler">
+                  <i class="fas fa-angle-down"></i>
+                  <i class="fas fa-angle-up"></i>
+                </div>
+              </div>
+            </div>
+            <ul class="list-unstyled collapse" id="Get-Help">
+              <li><a href="" target="_blank">Help Center</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms</a></li>
+              <li><a href="">Login</a></li>
+            </ul>
+          </div>
+          <!--/.Fourth column-->
+        </div>
+      </div>
+      <!--/.Footer Links-->
+      <hr class="mb-0" />
+      <!--Copyright-->
+      <div class="py-3 text-center">
+        Copyright @Softnbees Private Comapny Ltd 2019-
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </div>
+      <!--/.Copyright-->
+    </footer>
+
+    <!-- Footer -->
+    <!-- Ends footer -->
+
+    <!-- JQuery -->
+    <script
+      type="text/javascript "
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
+      crossorigin="anonymous "
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
+    <script
+      type="text/javascript"
+      src="asset/js/jquery.particleground.min.js"
+    ></script>
+    <script type="text/javascript" src="asset/js/demo.js"></script>
+    <!-- Bootstrap tooltips -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
+      crossorigin="anonymous "
+    ></script>
+    <script src="asset/js/jquery.countup.js"></script>
+    <script
+      type="text/javascript "
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js "
+    ></script>
+    <script src="asset/js/vanillajs-scrollspy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </body>
+</html>
+
+<script>
+  const navbar = document.querySelector("#navbar");
+  const scrollspy = new VanillaScrollspy(navbar);
+  scrollspy.init();
+
+  $(document).ready(function () {
+    $("#login-btn-click").click(function () {
+      $("#exampleModal").modal("hide");
+    });
+
+    $("#create_account_click").click(function () {
+      $("#exampleModal1").modal("hide");
+    });
+
+    $(".count").countUp();
+    $(".count").countDown();
+
+    $(".count").countUp({
+      time: 4000,
+      delay: 10,
+    });
+
+    $(".count").countDown({
+      time: 4000,
+      delay: 10,
+    });
+  });
+
+  $(".tab-links").click(function () {
+    var tabID = $(this).attr("data-tab");
+
+    $(this).addClass("active").siblings().removeClass("active");
+
+    $("#tab-" + tabID)
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
+  });
+
+
+  (function () {
+    "use strict";
+  
+    var carousels = function () {
+      $(".owl-carousel1").owlCarousel({
+        loop: true,
+        center: true,
+        margin: 0,
+        responsiveClass: true,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          680: {
+            items: 2,
+            nav: false,
+            loop: false
+          },
+          1000: {
+            items: 3,
+            nav: true
+          }
+        }
+      });
+    };
+  
+    (function ($) {
+      carousels();
+    })(jQuery);
+  })();
+
+
+  $('.more').click(function(e) {
+    e.preventDefault();
+    $(this).text(function(i, t) {
+      return t == 'show less' ? 'show more' : 'show less';
+    }).prev('.more-cont').slideToggle()
+  });
+ 
+
+
+</script>

@@ -463,9 +463,9 @@ p {
 }
 
 .items .item {
-  min-width: 475px;
-  width: 475px;
-  height: 394px;;
+  min-width: 358px;
+  width: 358px;
+  height: 517px;
   background: white;
   margin: 10px;
   border-radius: 5px;
@@ -489,7 +489,7 @@ p {
 }
 
 .flex-item img {
-  width: 80%;
+  width: 70%;
   height: 108px;
   border-radius: 50%;
 }
@@ -501,6 +501,14 @@ p {
 .image-name-testimonial {
   padding-left: 15px;
   padding-top: 10px;
+}
+
+.testimonial-content img {
+  float: right !important;
+  padding: 5px;
+  width: 26%;
+  height: 84px;
+  border-radius: 50%;
 }
 
 .mentroship_section {
@@ -908,4 +916,53 @@ p {
   .tabs_intern {
     margin-left: 0px !important;
   }
+  .border-line{
+    border-right: 0px solid darkgray !important;
+    border-bottom: 2px solid darkgray;
+    padding-bottom: 34px;
+}
+.border-line-1{
+  margin-top: 34px;
+}
+
+
+/* course Details start  */
+
+
+
+.instructor_info{
+  padding-top: 60px;
+  padding-bottom: 20px !important;
+  padding-left: 15px !important;
+  margin-left: 0px !important;
+  background-color: white;
+  margin-top: 100px !important;
+  width: 100% !important;
+  border-radius: 2px 3px 4px 4px;
+  border-bottom: 8px solid  #0a5dc9;
+  box-shadow: 2px 3px 9px 9px #aaaaaa;
+ }
+
+ .instructor_info img{
+  margin-top: -130px !important;
+  margin-left: 0px !important;
+  width: 120px !important;
+  height: 120px !important;
+  /* float: left; */
+  border: 4px solid #fff;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
+  border-radius: 8px;
+}
+
+.certificate img{
+margin-top: 30px;
+}
+/* .online_bootcamp video{
+  width:320 ;
+  height: 240 ;
+} */
+
+
+/* Course details ends  */
+
 }
