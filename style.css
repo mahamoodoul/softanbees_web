@@ -1,34 +1,31 @@
 * {
   box-sizing: border-box;
- /* font-family: 'Roboto', sans-serif;*/
-  font-family: 'Montserrat', sans-serif;
-  
+  /* font-family: 'Roboto', sans-serif;*/
+  font-family: "Montserrat", sans-serif;
 }
 html,
 body {
   max-width: 100%;
   margin: 0%;
   /*font-family: 'Roboto', sans-serif;*/
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
-
-footer a{
+footer a {
   color: black !important;
   padding: 5px 0px 5px 0px;
 }
 
-a{
-  color:white;
+a {
+  color: white;
 }
 .shfooter .collapse {
   display: inherit;
 }
 
-
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .shfooter ul {
     margin-bottom: 0;
   }
@@ -42,11 +39,11 @@ a{
   }
 
   .shfooter .title .fa-angle-up,
-  .shfooter .title[aria-expanded=true] .fa-angle-down {
+  .shfooter .title[aria-expanded="true"] .fa-angle-down {
     display: none;
   }
 
-  .shfooter .title[aria-expanded=true] .fa-angle-up {
+  .shfooter .title[aria-expanded="true"] .fa-angle-up {
     display: block;
   }
 
@@ -55,13 +52,12 @@ a{
     padding: 0;
   }
 
-  .shfooter ul{
+  .shfooter ul {
     margin-top: 18px;
   }
-  .shfooter li{
+  .shfooter li {
     margin-top: 8px;
   }
-
 }
 
 .resize {
@@ -100,10 +96,8 @@ a{
   }
 }
 
-
 /* Medium devices (landscape tablets, 700px and up) */
 @media only screen and (max-width: 700px) {
-  
   .shfooter ul {
     margin-bottom: 0;
   }
@@ -132,7 +126,6 @@ a{
 }
 
 @media only screen and (max-width: 480px) {
-
   .shfooter ul {
     margin-bottom: 0;
   }
@@ -162,7 +155,6 @@ a{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 320px) {
-  
   .shfooter ul {
     margin-bottom: 0;
   }
@@ -189,5 +181,3 @@ a{
     padding: 0;
   }
 }
-
-

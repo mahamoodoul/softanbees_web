@@ -192,7 +192,7 @@
 
 .recomonded-card a:hover {
   color: black;
-  background-color:white;
+  background-color: white;
 }
 
 .tab_link_design {
@@ -459,7 +459,6 @@ p {
 .items {
   display: flex;
   overflow-x: auto;
-  
 }
 
 .items .item {
@@ -552,13 +551,13 @@ p {
 .read_more_btn {
   font-weight: bold;
   color: whitesmoke;
-  background-color:rgb(220, 53, 69);
-  border:rgb(220, 53, 69);
+  background-color: rgb(220, 53, 69);
+  border: rgb(220, 53, 69);
   text-decoration: none;
 }
-.read_more_btn:hover{
- overflow: hidden;
- color: black;
+.read_more_btn:hover {
+  overflow: hidden;
+  color: black;
 }
 
 .linkedin_icon {
@@ -645,13 +644,11 @@ p {
   padding: 10px;
 }
 
-
-.middle_partner_logo{
+.middle_partner_logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .box {
   width: 350px;
@@ -728,17 +725,15 @@ p {
   background-color: lightgray;
 }
 
-.newsletter_btn{
+.newsletter_btn {
   height: 40px;
   width: 150px !important;
-  background-color:#f76c6c !important;
+  background-color: #f76c6c !important;
   cursor: pointer;
   border: 2px solid #f76c6c !important;
   border-radius: 5px;
   font-weight: 700;
 }
-
-
 
 /* footer end */
 
@@ -890,6 +885,8 @@ p {
   }
   /* advantage ends */
 
+
+
   /* benifits starts*/
 
   .border-middle {
@@ -916,53 +913,70 @@ p {
   .tabs_intern {
     margin-left: 0px !important;
   }
-  .border-line{
+  .border-line {
     border-right: 0px solid darkgray !important;
     border-bottom: 2px solid darkgray;
     padding-bottom: 34px;
-}
-.border-line-1{
-  margin-top: 34px;
-}
+  }
+
+  .border-line-1 {
+    margin-top: 34px;
+  }
+
+  /* course starting page */
+  .collboration img {
+    width: 30% !important;
+  }
+  .collboration-logo-top {
+    width: 30% !important;
+  }
+  .collboration-logo-bottom {
+    width: 30% !important;
+  }
+  /* course ending page */
 
 
-/* course Details start  */
 
 
 
-.instructor_info{
-  padding-top: 60px;
-  padding-bottom: 20px !important;
-  padding-left: 15px !important;
-  margin-left: 0px !important;
-  background-color: white;
-  margin-top: 100px !important;
-  width: 100% !important;
-  border-radius: 2px 3px 4px 4px;
-  border-bottom: 8px solid  #0a5dc9;
-  box-shadow: 2px 3px 9px 9px #aaaaaa;
- }
-
- .instructor_info img{
-  margin-top: -130px !important;
-  margin-left: 0px !important;
-  width: 120px !important;
-  height: 120px !important;
-  /* float: left; */
-  border: 4px solid #fff;
-  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
-  border-radius: 8px;
-}
-
-.certificate img{
-margin-top: 30px;
-}
-/* .online_bootcamp video{
-  width:320 ;
-  height: 240 ;
-} */
 
 
-/* Course details ends  */
 
+
+
+
+
+
+
+
+
+  /* course Details start  */
+
+  .instructor_info {
+    padding-top: 60px;
+    padding-bottom: 20px !important;
+    padding-left: 15px !important;
+    margin-left: 0px !important;
+    background-color: white;
+    margin-top: 100px !important;
+    width: 100% !important;
+    border-radius: 2px 3px 4px 4px;
+    border-bottom: 8px solid #0a5dc9;
+    box-shadow: 2px 3px 9px 9px #aaaaaa;
+  }
+
+  .instructor_info img {
+    margin-top: -130px !important;
+    margin-left: 0px !important;
+    width: 120px !important;
+    height: 120px !important;
+    /* float: left; */
+    border: 4px solid #fff;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
+    border-radius: 8px;
+  }
+
+  .certificate img {
+    margin-top: 30px;
+  }
 }
